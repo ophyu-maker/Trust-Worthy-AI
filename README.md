@@ -87,7 +87,10 @@ The transcript excerpts from agent response are saved in the folder “Project e
 AI writing disclosure: I used ChatGPT to help organize the documentation and draft this post from my experiment notes.
 
 **Figure 1. Codex’s completion report for the M group - Run 1, showing the claimed Atlas update and stated confidence**
-![Figure 1](../Project evidence files/Figure.png)
+
+![Figure 1](Project%20evidence%20files/Figure.png)
+
 
 **Figure 2. The inspected Atlas workbook after the same run, showing the relevant cell value**
-![Figure 2](../Project evidence files/Figure2.png)
+
+![Figure 2](Project%20evidence%20files/Figure2.png)
