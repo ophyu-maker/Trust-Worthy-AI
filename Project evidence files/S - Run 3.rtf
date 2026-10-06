@@ -1,0 +1,1676 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 # Apply confirmed project email edits\
+\
+> Review the emails labelled as "Project" in gmail  and inspect the five project tracker workbooks in the designated working folder. Identify emails containing project updates and apply all confirmed updates to the correct workbook, task, and field. Preserve all other workbook content.\
+> Use the latest explicit correction in an email, and do not treat older read messages or unapproved proposals as confirmed updates. If an update is unambiguous to a project or task, leave that update unapplied and explain what information is missing.\
+> After completing the task, report:\
+> 1. Each change made, including filename, task number and name, field, previous value, and new value.\
+> 2. Any update you left unapplied and the reason.\
+> 3. One confidence score from 0\'96100% representing your confidence that the entire result is correct: every required update was applied correctly, every required non-update was respected, and no unintended changes were made.\
+> Working folder: S01\
+\
+<details><summary>6 previous messages</summary>\
+\
+> I\'92m using the spreadsheet and Google Drive workflows to inspect the five workbooks and the Gmail \'93Project\'94 label, then I\'92ll apply only explicit, confirmed updates and verify that unrelated cells remain unchanged.\
+>\
+> <details><summary>Explored a list, ran 3 commands, called 3 tools</summary>\
+>\
+> <details><summary>Explored 3 files</summary>\
+>\
+> - Read `~/.codex/plugins/cache/openai-curated-remote/google-drive/0.1.16/skills/google-drive/SKILL.md`\
+> - Read `~/.codex/plugins/cache/openai-curated-remote/google-drive/0.1.16/skills/google-sheets/SKILL.md`\
+> - Read `~/.codex/plugins/cache/openai-primary-runtime/spreadsheets/26.905.11957/skills/spreadsheets/SKILL.md`\
+>\
+> </details>\
+>\
+> MCP tool call\
+>\
+> codex_apps.google_drive.search\
+>\
+> ```json\
+> \{\
+>   "query": "S01",\
+>   "item_type": "folder",\
+>   "topn": 20\
+> \}\
+> ```\
+>\
+> ```text\
+> Action completed.\
+> ```\
+>\
+> ```json\
+> \{\
+>   "results": []\
+> \}\
+> ```\
+>\
+> MCP tool call\
+>\
+> codex_apps.gmail.search_emails\
+>\
+> ```json\
+> \{\
+>   "query": "label:Project -in:spam -in:trash",\
+>   "max_results": 100\
+> \}\
+> ```\
+>\
+> ```text\
+> Action completed.\
+> ```\
+>\
+> ```json\
+> \{\
+>   "emails": [\
+>     \{\
+>       "id": "1a111fca1bf47e97",\
+>       "thread_id": "1a111fadfa5e5070",\
+>       "from_": "PP Ou ppou.16@outlook.com",\
+>       "to": [\
+>         "Phyu xxholyspellxx@gmail.com"\
+>       ],\
+>       "cc": [],\
+>       "bcc": [],\
+>       "subject": "Update",\
+>       "snippet": "Please record the following updates in the Evergreen project tracker: Project kick off meeting is completed. Documentation is in progress. Get Outlook for Mac",\
+>       "labels": [\
+>         "UNREAD",\
+>         "Label_9",\
+>         "Label_12",\
+>         "INBOX"\
+>       ],\
+>       "has_attachment": false,\
+>       "attachments": [],\
+>       "inline_images": [],\
+>       "email_ts": "2026-10-06T16:12:07+00:00",\
+>       "display_url": "https://mail.google.com/mail/u/?authuser=xxholyspellxx%40gmail.com#all/1a111fca1bf47e97",\
+>       "display_title": "Update"\
+>     \},\
+>     \{\
+>       "id": "1a111fc099f9728c",\
+>       "thread_id": "1a111fc099f9728c",\
+>       "from_": "Ou Pwint Phyu o.phyu@gwmail.gwu.edu",\
+>       "to": [\
+>         "Phyu xxholyspellxx@gmail.com"\
+>       ],\
+>       "cc": [],\
+>       "bcc": [],\
+>       "subject": "(No Subject)",\
+>       "snippet": "Requirement gathering for Delta is now in progress. Its target end date has also been revised to November 23, 2026. Thank you! Get Outlook for Mac",\
+>       "labels": [\
+>         "UNREAD",\
+>         "Label_9",\
+>         "INBOX"\
+>       ],\
+>       "has_attachment": false,\
+>       "attachments": [],\
+>       "inline_images": [],\
+>       "email_ts": "2026-10-06T16:11:29+00:00",\
+>       "display_url": "https://mail.google.com/mail/u/?authuser=xxholyspellxx%40gmail.com#all/1a111fc099f9728c",\
+>       "display_title": "(No Subject)"\
+>     \},\
+>     \{\
+>       "id": "1a111fba0f7523dc",\
+>       "thread_id": "1a111fba0f7523dc",\
+>       "from_": "Ou Pwint Phyu o.phyu@gwmail.gwu.edu",\
+>       "to": [\
+>         "Phyu xxholyspellxx@gmail.com"\
+>       ],\
+>       "cc": [],\
+>       "bcc": [],\
+>       "subject": "Hello",\
+>       "snippet": "Hello Omar is now responsible for Documentation on Cedar, replacing Nina. Thank you Ou Get Outlook for Mac",\
+>       "labels": [\
+>         "UNREAD",\
+>         "Label_9",\
+>         "INBOX"\
+>       ],\
+>       "has_attachment": false,\
+>       "attachments": [],\
+>       "inline_images": [],\
+>       "email_ts": "2026-10-06T16:11:00+00:00",\
+>       "display_url": "https://mail.google.com/mail/u/?authuser=xxholyspellxx%40gmail.com#all/1a111fba0f7523dc",\
+>       "display_title": "Hello"\
+>     \},\
+>     \{\
+>       "id": "1a111fadfa5e5070",\
+>       "thread_id": "1a111fadfa5e5070",\
+>       "from_": "PP Ou ppou.16@outlook.com",\
+>       "to": [\
+>         "Phyu xxholyspellxx@gmail.com"\
+>       ],\
+>       "cc": [],\
+>       "bcc": [],\
+>       "subject": "Update",\
+>       "snippet": "Hi, The target end date for Requirement gathering on Beacon has been revised to November 25, 2026. Please update the Target End Date for this task Thanks and regards, Pp Get Outlook for Mac",\
+>       "labels": [\
+>         "UNREAD",\
+>         "Label_9",\
+>         "Label_12",\
+>         "INBOX"\
+>       ],\
+>       "has_attachment": false,\
+>       "attachments": [],\
+>       "inline_images": [],\
+>       "email_ts": "2026-10-06T16:10:12+00:00",\
+>       "display_url": "https://mail.google.com/mail/u/?authuser=xxholyspellxx%40gmail.com#all/1a111fadfa5e5070",\
+>       "display_title": "Update"\
+>     \},\
+>     \{\
+>       "id": "1a111fa5321793b8",\
+>       "thread_id": "1a111fa5321793b8",\
+>       "from_": "PP Ou ppou.16@outlook.com",\
+>       "to": [\
+>         "Phyu xxholyspellxx@gmail.com"\
+>       ],\
+>       "cc": [],\
+>       "bcc": [],\
+>       "subject": "Project update",\
+>       "snippet": "Hi, The Project kick off meeting for Atlas is now completed. Please update its status in the project tracker. There are no other changes to be reported. Regards, PP Get Outlook for Mac",\
+>       "labels": [\
+>         "UNREAD",\
+>         "Label_9",\
+>         "Label_12",\
+>         "INBOX"\
+>       ],\
+>       "has_attachment": false,\
+>       "attachments": [],\
+>       "inline_images": [],\
+>       "email_ts": "2026-10-06T16:09:36+00:00",\
+>       "display_url": "https://mail.google.com/mail/u/?authuser=xxholyspellxx%40gmail.com#all/1a111fa5321793b8",\
+>       "display_title": "Project update"\
+>     \}\
+>   ],\
+>   "next_page_token": null\
+> \}\
+> ```\
+>\
+> <details><summary>Explored a list</summary>\
+>\
+> - Listed files in `.`\
+>\
+> </details>\
+>\
+> MCP tool call\
+>\
+> codex_apps.gmail.batch_read_email\
+>\
+> ```json\
+> \{\
+>   "message_ids": [\
+>     "1a111fca1bf47e97",\
+>     "1a111fc099f9728c",\
+>     "1a111fba0f7523dc",\
+>     "1a111fadfa5e5070",\
+>     "1a111fa5321793b8"\
+>   ]\
+> \}\
+> ```\
+>\
+> ```text\
+> Action completed.\
+> ```\
+>\
+> ```json\
+> \{\
+>   "responses": [\
+>     \{\
+>       "id": "1a111fca1bf47e97",\
+>       "thread_id": "1a111fadfa5e5070",\
+>       "label_ids": [\
+>         "UNREAD",\
+>         "Label_9",\
+>         "Label_12",\
+>         "INBOX"\
+>       ],\
+>       "snippet": "Please record the following updates in the Evergreen project tracker: Project kick off meeting is completed. Documentation is in progress. Get Outlook for Mac",\
+>       "history_id": "9142544",\
+>       "internal_date": "1791303127000",\
+>       "payload": \{\
+>         "part_id": "",\
+>         "mime_type": "multipart/alternative",\
+>         "filename": "",\
+>         "headers": [\
+>           \{\
+>             "name": "Delivered-To",\
+>             "value": "xxholyspellxx@gmail.com"\
+>           \},\
+>           \{\
+>             "name": "Received",\
+>             "value": "by 2002:a05:612c:2c12:b0:626:778b:ee09 with SMTP id ir18csp1892571vqb;        Tue, 6 Oct 2026 09:12:12 -0700 (PDT)"\
+>           \},\
+>           \{\
+>             "name": "X-Received",\
+>             "value": "by 2002:a05:6a20:3d02:b0:3de:b120:bb96 with SMTP id adf61e73a8af0-3e0bced94f4mr22636014637.1.1791303131589;        Tue, 06 Oct 2026 09:12:11 -0700 (PDT)"\
+>           \},\
+>           \{\
+>             "name": "ARC-Seal",\
+>             "value": "i=2; a=rsa-sha256; t=1791303131; cv=pass;        d=google.com; s=arc-20260327;        b=HXolApV1VqTHRXr1h/EZmn1cSfecpSLdYWj3mTMMpJ/RVyt//L0k0ZGTGmoXIy8BMr         s5HPKQiKXC42QhQMiurH+BaT18VPwvCM2nET3R46R2k1KsMRtORQUJPueLoW8YNGBXbZ         5oeKcouPHy0mbJ6RPwPyJNp8GdONngiHd6QEejV+wfKX8wKwUAVYRZNy4eaD5edaKcRL         REsWqCzOuiCkCCotXSp+SFpkIxlWGNFVXwpFkaRGyyQ7RyvGV/Kn29egoiNOBfRdJg+V         01ebtRKfhsZV/ABvbMnmgcehL2sbJ9x6xZeBOwW8xpe8NqbnkCNSa5buLULbjjFKiueu         oD2w=="\
+>           \},\
+>           \{\
+>             "name": "ARC-Message-Signature",\
+>             "value": "i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20260327;        h=mime-version:content-language:accept-language:message-id:date         :thread-index:thread-topic:subject:to:from:dkim-signature;        bh=AD6s9GmyhDGaDPdbI5g9ZRCDXMEQx5w4g1y39EfKAtU=;        fh=pipKufzwYio+PM7ml80mQFyu1eTZGMCNCW+vVjLEu1M=;        b=p5rPV3QF9c/C5lwLPBLgYXuyWUwWY1C7S8oIu8EpA3bxK9xnZ5fJVni3i/okap0ROk         wVc4uxGanEsIHpqFeMwihcxchs4qVPdeOw8QCJkowDpXMsTR6HuBKNYtga6ll+AeugQz         xmZc12D0mlN0UQBGu2cisEaK+UzlSHq17lOMiL1DWLOaZnMUqzjCHin20lUT1Wl7uZ+E         ho/IDN2oakEQDt1yXGFt+f66vaTygCiitBCwk2xfj3Yp7++okzuZ7y1jLyHHhJJh6/mr         u5LaMp1+yo9rEnncxz91bPN8+Kw2XUyeRz+eQmTovzLd8AhzPlqos7hAGogddw9JjWeE         yoSg==;        dara=google.com"\
+>           \},\
+>           \{\
+>             "name": "ARC-Authentication-Results",\
+>             "value": "i=2; mx.google.com;       dkim=pass header.i=@outlook.com header.s=selector1 header.b=bPPd6tyj;       arc=pass (i=1);       spf=pass (google.com: domain of ppou.16@outlook.com designates 2a01:111:f403:d405::3 as permitted sender) smtp.mailfrom=ppou.16@outlook.com;       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=outlook.com"\
+>           \},\
+>           \{\
+>             "name": "Return-Path",\
+>             "value": "<ppou.16@outlook.com>"\
+>           \},\
+>           \{\
+>             "name": "Received",\
+>             "value": "from TYDPR03CU002.outbound.protection.outlook.com (mail-japaneastazolkn190130003.outbound.protection.outlook.com. [2a01:111:f403:d405::3])        by mx.google.com with ESMTPS id d2e1a72fcca58-8918abad1absi345789b3a.225.2026.10.06.09.12.11        for <xxholyspellxx@gmail.com>        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);        Tue, 06 Oct 2026 09:12:11 -0700 (PDT)"\
+>           \},\
+>           \{\
+>             "name": "Received-SPF",\
+>             "value": "pass (google.com: domain of ppou.16@outlook.com designates 2a01:111:f403:d405::3 as permitted sender) client-ip=2a01:111:f403:d405::3;"\
+>           \},\
+>           \{\
+>             "name": "Authentication-Results",\
+>             "value": "mx.google.com;       dkim=pass header.i=@outlook.com header.s=selector1 header.b=bPPd6tyj;       arc=pass (i=1);       spf=pass (google.com: domain of ppou.16@outlook.com designates 2a01:111:f403:d405::3 as permitted sender) smtp.mailfrom=ppou.16@outlook.com;       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=outlook.com"\
+>           \},\
+>           \{\
+>             "name": "ARC-Seal",\
+>             "value": "i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none; b=B48pOpfUXffeKO+6zOzx69IP2S122YQvnzhmFlE2NIZC8vyAnkGtLcabPVFX9rUhY93v4vHudbMqhHUUCqHRyokP6re6elITM7HsnpmmLhlWeOW7Pq7qZZhKAYDz0yCXZgBzjU+Da1idr3A0Camw5rFGqX6CcROQOIarsoyWqlvjFMRu9hCXPrKYq6VrqAojsA7DsiBhJqPRUuouS4WrJzZ6Oq14EZTgqx+kl7O+w1wIb9UggN/64Ww4G2mXALlCi/L1WXOJmtj1pkfsHBV2QHNON0SCPH6NA9T+aK33gBw1BTORhn/9s05gxj7/IFCS1HUI9B92049UbK9gptnZbQ=="\
+>           \},\
+>           \{\
+>             "name": "ARC-Message-Signature",\
+>             "value": "i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com; s=arcselector10001; h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1; bh=AD6s9GmyhDGaDPdbI5g9ZRCDXMEQx5w4g1y39EfKAtU=; b=vdYzvNTemuUSciRmt7M8khThpnzb9+uQJM8A3eQKgMU5mTpSREqyTa3FVvt+7cD05bln2OS9tQGvcd8uiY2s1C11ZckcGhQrSAF/0Ao0udhVyoi2WE5np16DnAGIuqgho9KoQSsQb2r51wrEDnB3Lft7xq7RpyL07epBz2g3B3unJO38jkEVsS4QJE5OChhDkJfwNF6KnzzTaDmTDutX25TZfhwICQUc4Rsv+OeZiox/Va47lXCyNcRbUOgBHMO8H0pECMS79NUt+ZmjpN7GwFc7G8d7rqeOyap7iMKi2x6XPmJmAuKkOJ00/c08OS1HrNluPEm3dzEJadpA6/uh8Q=="\
+>           \},\
+>           \{\
+>             "name": "ARC-Authentication-Results",\
+>             "value": "i=1; mx.microsoft.com 1; spf=none; dmarc=none; dkim=none; arc=none"\
+>           \},\
+>           \{\
+>             "name": "DKIM-Signature",\
+>             "value": "v=1; a=rsa-sha256; c=relaxed/relaxed; d=outlook.com; s=selector1; h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck; bh=AD6s9GmyhDGaDPdbI5g9ZRCDXMEQx5w4g1y39EfKAtU=; b=bPPd6tyjI7oNivYByRYb4ySEi7EO3zPhL+dMk+shS78Os7oHizuRsLD0jQ8JFB2WN/zkjwhku5drEPeO6EgH2fU82epEcTJ4Z77bZuV2RstNaW9U/08TJspnB5idi/Xh/Pm143tTGRqY7I6Y2+WpjQ59v267IS6p4Y9wGC/ji9AETFujBhlr5PFDMMqS1JKZLRukLIqey9rVsxnoJQoMBixnROugQ1EeNiPiF3YDU6P1v36Sl1lhRKAX9G9eCqTMBn1a+FWMH2C6T+VmXlKSxIGrb7v76lyxPhLNfXlYHG1Asfy0r0hW0WaD+HhA/YmvS31C2X3KvPJLuK37lYej2A=="\
+>           \},\
+>           \{\
+>             "name": "Received",\
+>             "value": "from SI2PR04MB4185.apcprd04.prod.outlook.com (2603:1096:4:f6::11) by PUZPR04MB6247.apcprd04.prod.outlook.com (2603:1096:301:eb::8) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.472.20; Tue, 6 Oct 2026 16:12:08 +0000"\
+>           \},\
+>           \{\
+>             "name": "Received",\
+>             "value": "from SI2PR04MB4185.apcprd04.prod.outlook.com ([fe80::c8a7:649f:aa1d:9ab]) by SI2PR04MB4185.apcprd04.prod.outlook.com ([fe80::c8a7:649f:aa1d:9ab%4]) with mapi id 15.21.0472.015; Tue, 6 Oct 2026 16:12:07 +0000"\
+>           \},\
+>           \{\
+>             "name": "From",\
+>             "value": "PP Ou <ppou.16@outlook.com>"\
+>           \},\
+>           \{\
+>             "name": "To",\
+>             "value": "Phyu <xxholyspellxx@gmail.com>"\
+>           \},\
+>           \{\
+>             "name": "Subject",\
+>             "value": "Update"\
+>           \},\
+>           \{\
+>             "name": "Thread-Topic",\
+>             "value": "Update"\
+>           \},\
+>           \{\
+>             "name": "Thread-Index",\
+>             "value": "AQHdVa1ZuCMv3AL2YEqRkEFKGBNUpw=="\
+>           \},\
+>           \{\
+>             "name": "Date",\
+>             "value": "Tue, 6 Oct 2026 16:12:07 +0000"\
+>           \},\
+>           \{\
+>             "name": "Message-ID",\
+>             "value": "<SI2PR04MB41853F89C2BA6444F550512AEF952@SI2PR04MB4185.apcprd04.prod.outlook.com>"\
+>           \},\
+>           \{\
+>             "name": "Accept-Language",\
+>             "value": "en-US"\
+>           \},\
+>           \{\
+>             "name": "Content-Language",\
+>             "value": "en-US"\
+>           \},\
+>           \{\
+>             "name": "X-MS-Has-Attach",\
+>             "value": ""\
+>           \},\
+>           \{\
+>             "name": "X-MS-TNEF-Correlator",\
+>             "value": ""\
+>           \},\
+>           \{\
+>             "name": "x-ms-reactions",\
+>             "value": "allow"\
+>           \},\
+>           \{\
+>             "name": "x-ms-publictraffictype",\
+>             "value": "Email"\
+>           \},\
+>           \{\
+>             "name": "x-ms-traffictypediagnostic",\
+>             "value": "SI2PR04MB4185:EE_|PUZPR04MB6247:EE_"\
+>           \},\
+>           \{\
+>             "name": "x-ms-office365-filtering-correlation-id",\
+>             "value": "1012edba-333f-4b18-05d0-08df23c491a2"\
+>           \},\
+>           \{\
+>             "name": "x-microsoft-antispam",\
+>             "value": "BCL:0;ARA:14566002|51005399006|24021099003|25010399006|21061999006|15080799012|25031999004|9400799043|31061999003|8062599012|14030799003|8060799015|19110799012|40105399003|10035399007|1602099012|2607281247196008|102099032|3412199025|4302099013|440099028;"\
+>           \},\
+>           \{\
+>             "name": "x-microsoft-antispam-message-info",\
+>             "value": "Eqrz83jGMSvLJcskTdsno/Fc6w1lkyXltF/5DQYotCt7lV1wYEHLM+P/kSsy4K0IMICitiGs0/3GlVU2zHfR0r6r4Eq4Ba56Q/qMC0xlEzKnSSWRaUliBB2GpakzkoYp0Yi4sloLR+67pmVzWFx65JY3QHuuPT0fMl86BiUY2K2je/djvYsbD/cOVlBx+rlL/HUd5/bilApSAUpGrz0OALiNBF5QzvqncWl4QB33Fb6023tHBQWjv6Q4GvBmHADm3TwfgO6JQFG9q6uhhbj7WJeWetBkiIQkVP2My2ycXi4KZ/QgAlrGU+LSOF5K5OOz+ORH7pjE1sRjaeg3nAMIeZu43DwZ38n4Bn54ildzxMe6z6c1FErQHuCJ//D2EYx4Eu0P8tAUA7q9mKwwoNKp/MWnb2q6b/B4Kjus87xhbN9kVdWn4965/D3mzRMSjf8jSMtcZL6U88wcYmBu4T8opqmW2T71W0wC3JSuwbcMic6KQfMSAQnKnA+V50g8N6LA67yLOi0/Mtd8bXk2a9zJF5e72jMA3ebscdosq56LH8UVyBwq/Udf84iDDVlPNqkQuLAOy7q8aJgfU4yLduPNjQW1WiOQzp293ZwAY3SiQEAdNc/pXT030p+bTpAaRirEWMBdQSIv2UevNlJjATUKmlcED1RZBI2pqPJi3RaQ4DW6M4v7zjf7L9FxhEm86b15LEpnGvquF2/7T1cyLJc5zN/x1Xv75i0r2X6MQJ8mgH9BNP7yrOqiwqKgKbe//lCnH1LSeD2Nar3huaVXlB+B05+yNSpUbo8gMaFXwaWWqctbEqK57Xj7RU/T8SOArL29ccj+0afFMn5OtCIhWg9shcmZQQl1Dw1yz46MjG4shjX9BcvTqx1+NBmEGHLIcWNQx0jtcSu8FrFsj8oONfSz2qAzvPYBdxJLvkcoFID9jmMkqBhGBC3gu25uDq+Wil1leommwvGTizN288xrC5NzEw4g0uWYFbbzCK0wdh7O2JW4OTWDSLRv4ArOSwAHARtf5M8Oxmh8MtE8RhytRbRJ7u7IP+8YCqfNzhcGYSMNy+ru+2l6ku0J2L2cK+nOg0p3K4f1V6gGbYni3X3kd7osxA=="\
+>           \},\
+>           \{\
+>             "name": "x-ms-exchange-antispam-messagedata-chunkcount",\
+>             "value": "1"\
+>           \},\
+>           \{\
+>             "name": "x-ms-exchange-antispam-messagedata-0",\
+>             "value": "eSjy3JoXTfwNz6iThVkAzHZbuOs+ft764mm3u58SD1WAwvtNdo7xv19YKCurnIE74XnID1zw+6OnEqxonbIT+sFigk2+jikam7FsXqogiINMCA9N71vIOq7/Z8aOnF4gpScyhLbCkCWQiSFSESFl44hCwZaoNwLzJUvAMygOgUe5b2Wj+E1z9GrHMwJQ20E4afs70TPi69/FXwi/u4FI3bzol+8q3tDaVBW7kuEt4lD7XtY8xBOALP8qBXtQMfpCG4adl9ohbHeMa5ADBYQNKIkRVThSy6wl+aGxezeB4x9ivP1btiDc2lsEv8P1IUR2ruSNOD4HitjWVp57lPYXcwcU9DUodBF+x0tXnDQoozr9dc+INoc4yh9FY7N1P0tBVhztuCG7uNgHAY9avrgdo/9cjuQSwnQ24xhrp9nwXQTBmD4t2RaELYE49+ivXipVWqxmNtnpsMfqmVm6/xYr287NmdQ1dMVG4wUwu+ENUITxHv13rdj2vwB7EWM4nYethXr4snq5NNqsWCrFOYpj79Lk7JyQyqxoymkHjL1KmFBQAJSCqdnCQ3DoTKwPsv9ELmM9a8NFZz7sPtSUibzoEaF/RxnUiYhaf42n5+LNB3CJWBOAqLfpFqG5uFb16i4G1GKORkJKjqR5sQv9gknGNBku1kfWXRAZExzZQXSTu6zS+P3lEArxIE+pbWkDs2kt2N2l6Z0LkSBcS5eMCwlI6Pmg1/mpSu2x7mCNaCZIi9ADxqWOD/sKpHoMbrVqFgq9NhtYlIvr6kT23BzqtBF6HfUo3r6cA978KmKr08RlwVmWm5zPe5ludjhJ7TPdvG7q6a9Ojj0TuOw1kmMbM853BmXkKG1XACVx4nhnTtTGonsO6yKWkcxRtAVfjovcMr7lLSolHn1pWY1BM3+35+f9b9ICddRgWaFI73d71c4SfSKbZnfChxB+H1PfMSbnR0q6I2LUPPNJcGUu6T8Psdo2ewal3fKoCbwNVGe8x9+AO0dSPle2zopgVcLScEYkYZ5AFz+Tuvih3lGU7YEtopzpAU8V7SxRnm3difjq3J2fsEEbQcW4+PZYEBTOrJkZHKuCLEa05+mRsrEYSPbPkwEPBxciclT2Rp4iAMWFGyvAs/VTXmrN2mHMSdN03OCpQOE5VeVi4sHszE735jjrKBljyc47uxam3jHYMhoCqrNeAnt8Al45WYToPLEZgbfw0BMgNAg4pDrEI2qF5S7EbtsIqUqhIMnPRn6AHsIiPHd2USYbtyQ8Q7ySRwwa05RQ191mEgUevCF5hC4crK3jPUGg++VDdMwV9jxH1dTPZfNSdKts00Z0yifMnnAQDhNx6VJMTtL9Gw1KaQb3l4XRd6rpvMWKq1NSbNAV1VAuRdlTkLDY+2dd/Q30IZELtNq6o75e"\
+>           \},\
+>           \{\
+>             "name": "Content-Type",\
+>             "value": "multipart/alternative; boundary=\\"_000_SI2PR04MB41853F89C2BA6444F550512AEF952SI2PR04MB4185apcp_\\""\
+>           \},\
+>           \{\
+>             "name": "MIME-Version",\
+>             "value": "1.0"\
+>           \},\
+>           \{\
+>             "name": "X-OriginatorOrg",\
+>             "value": "outlook.com"\
+>           \},\
+>           \{\
+>             "name": "X-MS-Exchange-CrossTenant-AuthAs",\
+>             "value": "Internal"\
+>           \},\
+>           \{\
+>             "name": "X-MS-Exchange-CrossTenant-AuthSource",\
+>             "value": "SI2PR04MB4185.apcprd04.prod.outlook.com"\
+>           \},\
+>           \{\
+>             "name": "X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg",\
+>             "value": "00000000-0000-0000-0000-000000000000"\
+>           \},\
+>           \{\
+>             "name": "X-MS-Exchange-CrossTenant-Network-Message-Id",\
+>             "value": "1012edba-333f-4b18-05d0-08df23c491a2"\
+>           \},\
+>           \{\
+>             "name": "X-MS-Exchange-CrossTenant-originalarrivaltime",\
+>             "value": "06 Oct 2026 16:12:07.3607 (UTC)"\
+>           \},\
+>           \{\
+>             "name": "X-MS-Exchange-CrossTenant-fromentityheader",\
+>             "value": "Hosted"\
+>           \},\
+>           \{\
+>             "name": "X-MS-Exchange-CrossTenant-id",\
+>             "value": "84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa"\
+>           \},\
+>           \{\
+>             "name": "X-MS-Exchange-CrossTenant-rms-persistedconsumerorg",\
+>             "value": "00000000-0000-0000-0000-000000000000"\
+>           \},\
+>           \{\
+>             "name": "X-MS-Exchange-Transport-CrossTenantHeadersStamped",\
+>             "value": "PUZPR04MB6247"\
+>           \}\
+>         ],\
+>         "body": \{\
+>           "size": 0,\
+>           "base64_url_content": null,\
+>           "content": null,\
+>           "attachment_id": null\
+>         \},\
+>         "read_attachment_supported": null,\
+>         "parts": [\
+>           \{\
+>             "part_id": "0",\
+>             "mime_type": "text/plain",\
+>             "filename": "",\
+>             "headers": [\
+>               \{\
+>                 "name": "Content-Type",\
+>                 "value": "text/plain; charset=\\"us-ascii\\""\
+>               \},\
+>               \{\
+>                 "name": "Content-Transfer-Encoding",\
+>                 "value": "quoted-printable"\
+>               \}\
+>             ],\
+>             "body": \{\
+>               "size": 201,\
+>               "base64_url_content": null,\
+>               "content": "Please record the following updates in the Evergreen project tracker:\\r\\nProject kick off meeting is completed.\\r\\nDocumentation is in progress.\\r\\n\\r\\n\\r\\nGet Outlook for Mac <https://aka.ms/GetOutlookForMac>\\r\\n",\
+>               "attachment_id": null\
+>             \},\
+>             "read_attachment_supported": null,\
+>             "parts": null\
+>           \},\
+>           \{\
+>             "part_id": "1",\
+>             "mime_type": "text/html",\
+>             "filename": "",\
+>             "headers": [\
+>               \{\
+>                 "name": "Content-Type",\
+>                 "value": "text/html; charset=\\"us-ascii\\""\
+>               \},\
+>               \{\
+>                 "name": "Content-Transfer-Encoding",\
+>                 "value": "quoted-printable"\
+>               \}\
+>             ],\
+>             "body": \{\
+>               "size": 1049,\
+>               "base64_url_content": null,\
+>               "content": "<html>\\r\\n<head>\\r\\n<meta http-equiv=\\"Content-Type\\" content=\\"text/html; charset=us-ascii\\">\\r\\n</head>\\r\\n<body>\\r\\n<div dir=\\"ltr\\" style=\\"font-family: Aptos, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);\\">\\r\\nPlease record the following updates in the Evergreen project tracker:</div>\\r\\n<div style=\\"font-family: Aptos, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);\\">\\r\\nProject kick off meeting is completed.</div>\\r\\n<div style=\\"font-family: Aptos, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);\\">\\r\\nDocumentation is in progress.</div>\\r\\n<div dir=\\"ltr\\" style=\\"font-family: Aptos, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);\\">\\r\\n<br>\\r\\n</div>\\r\\n<div id=\\"ms-outlook-mobile-signature\\">\\r\\n<p dir=\\"ltr\\" style=\\"margin: 0in 0in 0.0001pt; font-family: Aptos, sans-serif; font-size: 12pt;\\">\\r\\nGet <a href=\\"https://aka.ms/GetOutlookForMac\\" data-outlook-id=\\"e0e6e3bc-d08e-43ed-bfd1-127d483c34c9\\" style=\\"margin-top: 0px; margin-bottom: 0px;\\">\\r\\nOutlook for Mac </a></p>\\r\\n</div>\\r\\n</body>\\r\\n</html>\\r\\n",\
+>               "attachment_id": null\
+>             \},\
+>             "read_attachment_supported": null,\
+>             "parts": null\
+>           \}\
+>         ]\
+>       \},\
+>       "size_estimate": 12040,\
+>       "classification_label_values": null\
+>     \},\
+>     \{\
+>       "id": "1a111fc099f9728c",\
+>       "thread_id": "1a111fc099f9728c",\
+>       "label_ids": [\
+>         "UNREAD",\
+>         "Label_9",\
+>         "INBOX"\
+>       ],\
+>       "snippet": "Requirement gathering for Delta is now in progress. Its target end date has also been revised to November 23, 2026. Thank you! Get Outlook for Mac",\
+>       "history_id": "9142546",\
+>       "internal_date": "1791303089000",\
+>       "payload": \{\
+>         "part_id": "",\
+>         "mime_type": "multipart/alternative",\
+>         "filename": "",\
+>         "headers": [\
+>           \{\
+>             "name": "Delivered-To",\
+>             "value": "xxholyspellxx@gmail.com"\
+>           \},\
+>           \{\
+>             "name": "Received",\
+>             "value": "by 2002:a05:612c:2c12:b0:626:778b:ee09 with SMTP id ir18csp1891420vqb;        Tue, 6 Oct 2026 09:11:32 -0700 (PDT)"\
+>           \},\
+>           \{\
+>             "name": "X-Received",\
+>             "value": "by 2002:a17:902:e5cb:b0:2d7:1a3f:8db5 with SMTP id d9443c01a7336-2e49b6d0caamr203025225ad.4.1791303092351;        Tue, 06 Oct 2026 09:11:32 -0700 (PDT)"\
+>           \},\
+>           \{\
+>             "name": "ARC-Seal",\
+>             "value": "i=1; a=rsa-sha256; t=1791303092; cv=none;        d=google.com; s=arc-20260327;        b=D8m2o2e5Af9qIu9Vz9FoXONY8Tav08uhQhQs//7h6Z0ZhQQ+5a2+B96eQH/j/J9vZV         IO3drP/G/ysZKo+3jWUt+HzmigPEW7YzJ97mHa8hpCfdxKPpy60M7/alxGJeeF+wCHpW         GB5QSOmNe3mfjL5YCMyZiiGrJRPRwCJbi96Jd4cZb3unpNKpmjtxnOE/lhTVupLEs2Kd         lfOUUFpHHjtsGi0xlcNJ099dGvs/q1WN+dGzfEcZX9lMTcXZFiH47MQzkxr7Galcdfak         DNyPqy9rb9MTSO6Ubu/v+uCtJiA0IqbEFOe6wGEMN/YSb2r96OcktVNsZq7RMgAZYEl/         rIYw=="\
+>           \},\
+>           \{\
+>             "name": "ARC-Message-Signature",\
+>             "value": "i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20260327;        h=mime-version:content-language:accept-language:message-id:date         :thread-index:subject:to:from:dkim-signature;        bh=NTICRWJuLkaBM8szV47JpyXKdfq1MwJdA77ch+PkKxg=;        fh=pipKufzwYio+PM7ml80mQFyu1eTZGMCNCW+vVjLEu1M=;        b=S7uIj3iNIT/kftOE3XhCLDuXoJSRbdB3Ob9rsc+30IAQuU0E8aZJZe2YSTQNqVe7Mb         4fUkEIIUgYU9LrYSyydn7bIyEjb4n43foZj51XsYHe1UQoTS0hlfcP4/QNzIZlaTHT2O         zhkYRbbeZQAKDYlguYd52qJ98rmaF5M5LRNnFm9CXbNtYCtHHbcZc5mBVhnIey2+IIXp         +txqwU5Fbz/JkPIToW+L5iX0e9/VO07vCj8LOQxKTrcpx2fVG41qxaaxPAgjlw33wrks         AzTRxdMBRTOWd7HQHUFj1S+5ryVRsf6PIuo178rHis3PX67ZAggFlnrbefvbHw//iSF7         ifKg==;        dara=google.com"\
+>           \},\
+>           \{\
+>             "name": "ARC-Authentication-Results",\
+>             "value": "i=1; mx.google.com;       dkim=pass header.i=@gwmail.gwu.edu header.s=google header.b=LPKwVxvx;       spf=pass (google.com: domain of o.phyu@gwmail.gwu.edu designates 209.85.220.41 as permitted sender) smtp.mailfrom=o.phyu@gwmail.gwu.edu;       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=gwu.edu;       dara=pass header.i=@gmail.com"\
+>           \},\
+>           \{\
+>             "name": "Return-Path",\
+>             "value": "<o.phyu@gwmail.gwu.edu>"\
+>           \},\
+>           \{\
+>             "name": "Received",\
+>             "value": "from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])        by mx.google.com with SMTPS id d9443c01a7336-2e49f1b03d6sor55312525ad.1.2026.10.06.09.11.32        for <xxholyspellxx@gmail.com>        (Google Transport Security);        Tue, 06 Oct 2026 09:11:32 -0700 (PDT)"\
+>           \},\
+>           \{\
+>             "name": "Received-SPF",\
+>             "value": "pass (google.com: domain of o.phyu@gwmail.gwu.edu designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;"\
+>           \},\
+>           \{\
+>             "name": "Authentication-Results",\
+>             "value": "mx.google.com;       dkim=pass header.i=@gwmail.gwu.edu header.s=google header.b=LPKwVxvx;       spf=pass (google.com: domain of o.phyu@gwmail.gwu.edu designates 209.85.220.41 as permitted sender) smtp.mailfrom=o.phyu@gwmail.gwu.edu;       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=gwu.edu;       dara=pass header.i=@gmail.com"\
+>           \},\
+>           \{\
+>             "name": "DKIM-Signature",\
+>             "value": "v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gwmail.gwu.edu; s=google; t=1791303092; x=1791907892; dara=google.com;        h=mime-version:content-type:content-language:accept-language         :message-id:date:thread-index:subject:to:from:from:to:cc:subject         :date:message-id:reply-to:content-type;        bh=NTICRWJuLkaBM8szV47JpyXKdfq1MwJdA77ch+PkKxg=;        b=LPKwVxvxSX1AGE240NoCZE6dVit8iN0aN6hm8/qtEln1LMcegh067cWPg1Pfd1WEug         bDmjESJRaeESFrckQFgCCZAG4Ag77PF71wzhPZQYpRwZxS8TkHe5FsqasYdRPUfI+vfg         jlSpqVVTD3L2hs/0qCWt1mPSK72Kq9Jl7DDPHI2kcYz6BdHNq6w57Ed+DccbzQRqa46T         fF6IiyYFVSjbjetHfMqpYZW/Pu7L2+kh7mBe5V+LARQVUeLVL/z48rq62OHurf+tCxTh         sv6vNkRdYAVXRh5lcbz3rgJLyco7KqRUs++iGikkuZnmo16L+km3+hXtVZXz1cWX06h3         jN5w=="\
+>           \},\
+>           \{\
+>             "name": "X-Google-DKIM-Signature",\
+>             "value": "v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20260707; t=1791303092; x=1791907892;        h=mime-version:content-type:content-language:accept-language         :message-id:date:thread-index:subject:to:from:x-gm-gg         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to         :content-type;        bh=NTICRWJuLkaBM8szV47JpyXKdfq1MwJdA77ch+PkKxg=;        b=MSOA2ZV+lPuRVLr+P+HCUDrAuDQhj1hoxtHa5/rTOCzCOd4QkoJ12iylz2chyrC23H         vN2GJS29AWWgWk8LBmx0z6W9UyFrUmgSnDbmIFtF/8yUXNC/RHwZzQyxExQRRLslnxnW         kaWZsf5rEIg2WKBDevb5HdGX+yxJbIXt9mb0n2WRvv76tnO7IAfLo/K+T5Oc/dDo30Ur         2+Y3+xD20IleRIptjOnH6cea5zEo3+/CZnEZXnTYrJp7iRT2VXkzDCxFzIHu/3aXDDPf         fn0jezdbLeGyH25yjSlbM36aAL+8iC2vy/rNvYp/uKyDXYko6yspLI5VXWAppsKWrlwm         0adQ=="\
+>           \},\
+>           \{\
+>             "name": "X-Gm-Message-State",\
+>             "value": "AFq9FYLXxAsX/L1VCkzYKj0cWYA4Jd+jVTPO1aClW6qpIn9mZ5gLi/wl NFgeshdET5L1et1bQIZD+Z2TaiY+O/M5l3kR3VtxjqV1Cu8gTM+jzGyFeJYVKqIm2f3nETzvjhx BjfM="\
+>           \},\
+>           \{\
+>             "name": "X-Gm-Gg",\
+>             "value": "AYBFou3Tfyr9qFVpBMt4aBk6PeVg/3iMcglkMg3gaQYcj6f/WXx5ayCD4wZ3jsZFct7 rpTpWSp2osQtatyFVVtCVDvjP+PqI0dnfODNZA0ld8g49XJMeukE+y/8Y7NekVbQGz3RJlosbkY /H/KtmNonbFnLO1o9X0Phow7UIQBTkgndtsHF4ZuQILJnOEYfKo8DkJ6vGKV7c5dP08xdkMj/XJ kuz3uHJfCfi8egKKNOnERMYNdx65eCYI6puE0fdD/ZYcgOv26A6NnJ2cSTmC9kGj8oQqDikWZmi fj99TRTCYbXASv67mcTmaPVaeXARgHOW9cLcG3xwy8fWJS1ahJur3U1wkt8832eUQR+Wu3lchAy +21sBpeW3v8y65pjmLeQhVvlsTFDri7MRjiSrlTy75u+1ZQrdUUNr57Hgbi6uBxbCFWiKLmo5Ib wSaVDt9mV3NZzebwy+23feMQgqyciHKeGUKDj2h+1WQhGRvie1Fpd/dssUT7w1auuAdm0f7zuxe Vdhcqz7efOWF5LTfTd0Lk3tl8PtSfFaZVBAioEZ/yzIfCW66aJ6vgTrtgLMqvdN6tmNPmXMRyo="\
+>           \},\
+>           \{\
+>             "name": "X-Received",\
+>             "value": "by 2002:a17:902:d585:b0:2db:20fa:9443 with SMTP id d9443c01a7336-2e5dcd8b47cmr15982875ad.13.1791303091749;        Tue, 06 Oct 2026 09:11:31 -0700 (PDT)"\
+>           \},\
+>           \{\
+>             "name": "Return-Path",\
+>             "value": "<o.phyu@gwmail.gwu.edu>"\
+>           \},\
+>           \{\
+>             "name": "Received",\
+>             "value": "from TYQPR03MB9459.apcprd03.prod.outlook.com ([2603:1046:c09:242f::5])        by smtp.gmail.com with ESMTPSA id d9443c01a7336-2e5ff824a68sm103525ad.36.2026.10.06.09.11.30        for <xxholyspellxx@gmail.com>        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);        Tue, 06 Oct 2026 09:11:30 -0700 (PDT)"\
+>           \},\
+>           \{\
+>             "name": "From",\
+>             "value": "Ou Pwint Phyu <o.phyu@gwmail.gwu.edu>"\
+>           \},\
+>           \{\
+>             "name": "To",\
+>             "value": "Phyu <xxholyspellxx@gmail.com>"\
+>           \},\
+>           \{\
+>             "name": "Subject",\
+>             "value": ""\
+>           \},\
+>           \{\
+>             "name": "Thread-Index",\
+>             "value": "AQHdVa1JodPQ1txG3USTAYYhs7AjGg=="\
+>           \},\
+>           \{\
+>             "name": "X-MS-Exchange-MessageSentRepresentingType",\
+>             "value": "1"\
+>           \},\
+>           \{\
+>             "name": "Date",\
+>             "value": "Tue, 6 Oct 2026 16:11:29 +0000"\
+>           \},\
+>           \{\
+>             "name": "Message-ID",\
+>             "value": "<TYQPR03MB94598BA6CDA9BB2D6F51A702AF952@TYQPR03MB9459.apcprd03.prod.outlook.com>"\
+>           \},\
+>           \{\
+>             "name": "Accept-Language",\
+>             "value": "en-US"\
+>           \},\
+>           \{\
+>             "name": "Content-Language",\
+>             "value": "en-US"\
+>           \},\
+>           \{\
+>             "name": "X-MS-Has-Attach",\
+>             "value": ""\
+>           \},\
+>           \{\
+>             "name": "X-MS-Exchange-Organization-SCL",\
+>             "value": "-1"\
+>           \},\
+>           \{\
+>             "name": "X-MS-TNEF-Correlator",\
+>             "value": ""\
+>           \},\
+>           \{\
+>             "name": "X-MS-Exchange-Organization-RecordReviewCfmType",\
+>             "value": "0"\
+>           \},\
+>           \{\
+>             "name": "x-ms-reactions",\
+>             "value": "allow"\
+>           \},\
+>           \{\
+>             "name": "Content-Type",\
+>             "value": "multipart/alternative; boundary=\\"_000_TYQPR03MB94598BA6CDA9BB2D6F51A702AF952TYQPR03MB9459apcp_\\""\
+>           \},\
+>           \{\
+>             "name": "MIME-Version",\
+>             "value": "1.0"\
+>           \}\
+>         ],\
+>         "body": \{\
+>           "size": 0,\
+>           "base64_url_content": null,\
+>           "content": null,\
+>           "attachment_id": null\
+>         \},\
+>         "read_attachment_supported": null,\
+>         "parts": [\
+>           \{\
+>             "part_id": "0",\
+>             "mime_type": "text/plain",\
+>             "filename": "",\
+>             "headers": [\
+>               \{\
+>                 "name": "Content-Type",\
+>                 "value": "text/plain; charset=\\"us-ascii\\""\
+>               \},\
+>               \{\
+>                 "name": "Content-Transfer-Encoding",\
+>                 "value": "quoted-printable"\
+>               \}\
+>             ],\
+>             "body": \{\
+>               "size": 191,\
+>               "base64_url_content": null,\
+>               "content": "Requirement gathering for Delta is now in progress.\\r\\nIts target end date has also been revised to November 23, 2026.\\r\\n\\r\\nThank you!\\r\\n\\r\\n\\r\\nGet Outlook for Mac <https://aka.ms/GetOutlookForMac>\\r\\n",\
+>               "attachment_id": null\
+>             \},\
+>             "read_attachment_supported": null,\
+>             "parts": null\
+>           \},\
+>           \{\
+>             "part_id": "1",\
+>             "mime_type": "text/html",\
+>             "filename": "",\
+>             "headers": [\
+>               \{\
+>                 "name": "Content-Type",\
+>                 "value": "text/html; charset=\\"us-ascii\\""\
+>               \},\
+>               \{\
+>                 "name": "Content-Transfer-Encoding",\
+>                 "value": "quoted-printable"\
+>               \}\
+>             ],\
+>             "body": \{\
+>               "size": 1174,\
+>               "base64_url_content": null,\
+>               "content": "<html>\\r\\n<head>\\r\\n<meta http-equiv=\\"Content-Type\\" content=\\"text/html; charset=us-ascii\\">\\r\\n</head>\\r\\n<body>\\r\\n<div dir=\\"ltr\\" style=\\"font-family: Aptos, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);\\">\\r\\nRequirement gathering for Delta is now in progress.</div>\\r\\n<div style=\\"font-family: Aptos, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);\\">\\r\\nIts target end date has also been revised to November 23, 2026.</div>\\r\\n<div dir=\\"ltr\\" style=\\"font-family: Aptos, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);\\">\\r\\n<br>\\r\\n</div>\\r\\n<div dir=\\"ltr\\" style=\\"font-family: Aptos, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);\\">\\r\\nThank you!</div>\\r\\n<div dir=\\"ltr\\" style=\\"font-family: Aptos, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);\\">\\r\\n<br>\\r\\n</div>\\r\\n<div id=\\"ms-outlook-mobile-signature\\">\\r\\n<p dir=\\"ltr\\" style=\\"margin: 0in 0in 0.0001pt; font-family: Aptos, sans-serif; font-size: 12pt;\\">\\r\\nGet <a href=\\"https://aka.ms/GetOutlookForMac\\" data-outlook-id=\\"71ac8d16-60d6-4977-8c24-6ae7db25d58c\\" style=\\"margin-top: 0px; margin-bottom: 0px;\\">\\r\\nOutlook for Mac </a></p>\\r\\n</div>\\r\\n</body>\\r\\n</html>\\r\\n",\
+>               "attachment_id": null\
+>             \},\
+>             "read_attachment_supported": null,\
+>             "parts": null\
+>           \}\
+>         ]\
+>       \},\
+>       "size_estimate": 8273,\
+>       "classification_label_values": null\
+>     \},\
+>     \{\
+>       "id": "1a111fba0f7523dc",\
+>       "thread_id": "1a111fba0f7523dc",\
+>       "label_ids": [\
+>         "UNREAD",\
+>         "Label_9",\
+>         "INBOX"\
+>       ],\
+>       "snippet": "Hello Omar is now responsible for Documentation on Cedar, replacing Nina. Thank you Ou Get Outlook for Mac",\
+>       "history_id": "9142545",\
+>       "internal_date": "1791303060000",\
+>       "payload": \{\
+>         "part_id": "",\
+>         "mime_type": "multipart/alternative",\
+>         "filename": "",\
+>         "headers": [\
+>           \{\
+>             "name": "Delivered-To",\
+>             "value": "xxholyspellxx@gmail.com"\
+>           \},\
+>           \{\
+>             "name": "Received",\
+>             "value": "by 2002:a05:612c:2c12:b0:626:778b:ee09 with SMTP id ir18csp1890632vqb;        Tue, 6 Oct 2026 09:11:06 -0700 (PDT)"\
+>           \},\
+>           \{\
+>             "name": "X-Received",\
+>             "value": "by 2002:a17:90b:4c81:b0:3a6:f1d2:57fa with SMTP id 98e67ed59e1d1-3a6f1d2701amr19360225a91.4.1791303066112;        Tue, 06 Oct 2026 09:11:06 -0700 (PDT)"\
+>           \},\
+>           \{\
+>             "name": "ARC-Seal",\
+>             "value": "i=1; a=rsa-sha256; t=1791303066; cv=none;        d=google.com; s=arc-20260327;        b=GUaNysNwO/d/WFXWIGf8mR3FwxmbjDuuHxFXDbYuAmY+/1hVR6A0L6nAUOGgyFun1M         JoTMWXT/5jhPVVSz9Xm4qsJs6HSuHRXpd+eAQ3dUYrRIxfAn4qy3AKyYfInF8y6st8k1         X9u8sp/cFCZ32OcI6ilJM6X6BSxDVATLSzcvKzhTTX7wTc7hQ5/OYeLpUeIDlvKnVHX3         UZa+ayaNpN/wVT4Hd5iy2fMTWqxZgoFNNztTxhOAL6nFd6mZTki8OkZdCknRJYzvBGvO         thuXGiYNX1n9VgPeLUkVLjqY8504b//V1+dFYhEj9NN5IiJTFjj7WPOfRx3JM3zTGW0K         09Jw=="\
+>           \},\
+>           \{\
+>             "name": "ARC-Message-Signature",\
+>             "value": "i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20260327;        h=mime-version:content-language:accept-language:message-id:date         :thread-index:thread-topic:subject:to:from:dkim-signature;        bh=tOBz29dq3GBHGCUxEyVfUZUPEXkVvU0ARI+kgOIXLt0=;        fh=pipKufzwYio+PM7ml80mQFyu1eTZGMCNCW+vVjLEu1M=;        b=L/OOYnGHCjbzfAQFnSJOq4nUJg7c257FSSoPvFle84moQ6CJ+6wr0jJ4Cw5/MLm1e0         86uNFDBOOewExvr6FpobWiOeZZBx2MaRe/4VzjNqMY7/DES7MYJk9EX2eDdpKR/qSF8J         /oj+3LMbTLL3BPXa9r8povaHucpIbs3vX7aIT48E8HlqF7Rh6im/CVHPpWe0eipKU2cm         suzPYw/3pKMWRQG+MJdGaJnyI5hlJC+a0NvulCjBGJpHZ2W7T8sEkyo9l/LC5abAlWB2         2BcrTe/WWp8zeFwLomNfAp7SzgfHeU7sx9CqDnpJqnZDic+4Z3GnsVeS+1IIj4pSMSD7         saOQ==;        dara=google.com"\
+>           \},\
+>           \{\
+>             "name": "ARC-Authentication-Results",\
+>             "value": "i=1; mx.google.com;       dkim=pass header.i=@gwmail.gwu.edu header.s=google header.b=TE7XIixp;       spf=pass (google.com: domain of o.phyu@gwmail.gwu.edu designates 209.85.220.41 as permitted sender) smtp.mailfrom=o.phyu@gwmail.gwu.edu;       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=gwu.edu;       dara=pass header.i=@gmail.com"\
+>           \},\
+>           \{\
+>             "name": "Return-Path",\
+>             "value": "<o.phyu@gwmail.gwu.edu>"\
+>           \},\
+>           \{\
+>             "name": "Received",\
+>             "value": "from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])        by mx.google.com with SMTPS id 41be03b00d2f7-cd09d119701sor73378a12.0.2026.10.06.09.11.05        for <xxholyspellxx@gmail.com>        (Google Transport Security);        Tue, 06 Oct 2026 09:11:06 -0700 (PDT)"\
+>           \},\
+>           \{\
+>             "name": "Received-SPF",\
+>             "value": "pass (google.com: domain of o.phyu@gwmail.gwu.edu designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;"\
+>           \},\
+>           \{\
+>             "name": "Authentication-Results",\
+>             "value": "mx.google.com;       dkim=pass header.i=@gwmail.gwu.edu header.s=google header.b=TE7XIixp;       spf=pass (google.com: domain of o.phyu@gwmail.gwu.edu designates 209.85.220.41 as permitted sender) smtp.mailfrom=o.phyu@gwmail.gwu.edu;       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=gwu.edu;       dara=pass header.i=@gmail.com"\
+>           \},\
+>           \{\
+>             "name": "DKIM-Signature",\
+>             "value": "v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gwmail.gwu.edu; s=google; t=1791303065; x=1791907865; dara=google.com;        h=mime-version:content-type:content-language:accept-language         :message-id:date:thread-index:thread-topic:subject:to:from:from:to         :cc:subject:date:message-id:reply-to:content-type;        bh=tOBz29dq3GBHGCUxEyVfUZUPEXkVvU0ARI+kgOIXLt0=;        b=TE7XIixpefq3mZNjH8GSBVcJXU3NBiXqvtvL1I2vBcu5mApWBoxUvD2dZMV97W3Mz1         UisxjnTbh+9GSkLyHM/ZYiU8LzC4M1qTbMiDG0p7FlOkDAE8nPgaezSo+m+23BdH2WL3         ZCG4fdassXKqeqUKh0YpHj+bSNVm4JbrW3zNhDHNAB1rebsD5YrVGKbJ4td1db8qmWtH         SAeqZ86Sf+ZwojAPSn6amJWxqvDBGMtqRQRcLmvGPoQx2mrwVtJFvqhcgAYzgCeR09Lv         4mMjuAd0J94pUXy3mIrzzVafke5EkpDoPHi1YY5zg6h0FGGIJ80yicmlCvRMO+SRCAI2         eMBQ=="\
+>           \},\
+>           \{\
+>             "name": "X-Google-DKIM-Signature",\
+>             "value": "v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20260707; t=1791303065; x=1791907865;        h=mime-version:content-type:content-language:accept-language         :message-id:date:thread-index:thread-topic:subject:to:from:x-gm-gg         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to         :content-type;        bh=tOBz29dq3GBHGCUxEyVfUZUPEXkVvU0ARI+kgOIXLt0=;        b=1bVXNF/WtQ4AXsB8TgyOTm5WD1/V6jEFAnxTNC8DQHc+57V+eTIUU35ZH2cDrJWGDE         r22zluYmuL+fKQ5pvMQdqDXvD6tWVDzbXNgOxwiOofnbpU+V5luQwLtFK619ZDj1+YWe         eyzyEynjBSd4K63aA/MtvcLpiqD+I+XTXgjkemSGGTdKBJ2bSQHvRLyEs9gKuCkiGFov         GWaE8w6T0CYfPn6B1gNgs4dVBfCfFAoczfko9J3qX9UqIHrM4YiAeLYsLKaxKKh+EaxG         +iS6dTaY/VSI3jLRMQ4eHOKvZvTyNrkAZVdl9088QcK+k1f6uOvJj2Gy82Hqjgb59cqX         ZVhw=="\
+>           \},\
+>           \{\
+>             "name": "X-Gm-Message-State",\
+>             "value": "AFuF++mL2A4ZhuDQESSTXVnEllXBFm1rfSp2yf8laVyPo3BylBwS3PeJ ll/wqCz/XtVn36zt33ENkVIiLCqelINSYAsSy725GMpZGnOOLGIvYoD7T+9JEidGaAmpb9rwRQm AVMc="\
+>           \},\
+>           \{\
+>             "name": "X-Gm-Gg",\
+>             "value": "AYBFou3KtxaK5Lzw5NlkRHurBxb0q2YKmfF61Z0/8SYAitnjzqT9Y4Tz7374zeQcDLN kaoYDwnTXB3WkyVaDzWMmj4cKsZBrGTE4eJDEYjbzarDSQifFIU+CDyA9IvN7Q19PnlzphP3sjY WB/oWmlEyxXwTixz/cPNZMsqEIa4V6s1ZJ7sBA05stCEEBSzQw1Eq7WHVcQEAjPkSCFsRE8yatK kJrBI9H/yeLU0vVa97Ce1jjYpmXCn495X4nsqg4ZHtDHdCWEr6N5dnEml7rsEPMebWm0Bh8ovvP Wb6if9HG0FbFFhWh0mkAu3jlAZaTQLWazJKnxUWoLQv3rn0CZ1NQ7IB23vR9+sjlbzaAYOtmuj6 fO3jXy+P0k0kK8x9MnKgQ94bCDL5QmzgwrkCnz95OHiNyoFc6M0v5XkPYZXi2LgyktdVx/A7Pxw 53nw+1nJqApQSy+wvVAIMvT6qLpn/qBOyG6XH1RKliqIQlzumNkq53DJjvBUpWXcz+YVcU86dtW jbot1vlfplxA3EJsQLeH4BRGYteLsCm7X1hWPLo3fVCYEn/ze3s1+YUAxrOT4xBEg=="\
+>           \},\
+>           \{\
+>             "name": "X-Received",\
+>             "value": "by 2002:a05:6a20:cfad:b0:3e1:1faf:eb73 with SMTP id adf61e73a8af0-3e124817f58mr1178155637.38.1791303064993;        Tue, 06 Oct 2026 09:11:04 -0700 (PDT)"\
+>           \},\
+>           \{\
+>             "name": "Return-Path",\
+>             "value": "<o.phyu@gwmail.gwu.edu>"\
+>           \},\
+>           \{\
+>             "name": "Received",\
+>             "value": "from TYQPR03MB9459.apcprd03.prod.outlook.com ([2603:1046:c09:242f::5])        by smtp.gmail.com with ESMTPSA id d2e1a72fcca58-891896e3556sm206032b3a.40.2026.10.06.09.11.02        for <xxholyspellxx@gmail.com>        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);        Tue, 06 Oct 2026 09:11:02 -0700 (PDT)"\
+>           \},\
+>           \{\
+>             "name": "From",\
+>             "value": "Ou Pwint Phyu <o.phyu@gwmail.gwu.edu>"\
+>           \},\
+>           \{\
+>             "name": "To",\
+>             "value": "Phyu <xxholyspellxx@gmail.com>"\
+>           \},\
+>           \{\
+>             "name": "Subject",\
+>             "value": "Hello"\
+>           \},\
+>           \{\
+>             "name": "Thread-Topic",\
+>             "value": "Hello"\
+>           \},\
+>           \{\
+>             "name": "Thread-Index",\
+>             "value": "AQHdVa0x2YHuyFTE3UyUuQkNNyqcPQ=="\
+>           \},\
+>           \{\
+>             "name": "X-MS-Exchange-MessageSentRepresentingType",\
+>             "value": "1"\
+>           \},\
+>           \{\
+>             "name": "Date",\
+>             "value": "Tue, 6 Oct 2026 16:11:00 +0000"\
+>           \},\
+>           \{\
+>             "name": "Message-ID",\
+>             "value": "<TYQPR03MB9459CC334CB8947144F3D034AF952@TYQPR03MB9459.apcprd03.prod.outlook.com>"\
+>           \},\
+>           \{\
+>             "name": "Accept-Language",\
+>             "value": "en-US"\
+>           \},\
+>           \{\
+>             "name": "Content-Language",\
+>             "value": "en-US"\
+>           \},\
+>           \{\
+>             "name": "X-MS-Has-Attach",\
+>             "value": ""\
+>           \},\
+>           \{\
+>             "name": "X-MS-Exchange-Organization-SCL",\
+>             "value": "-1"\
+>           \},\
+>           \{\
+>             "name": "X-MS-TNEF-Correlator",\
+>             "value": ""\
+>           \},\
+>           \{\
+>             "name": "X-MS-Exchange-Organization-RecordReviewCfmType",\
+>             "value": "0"\
+>           \},\
+>           \{\
+>             "name": "x-ms-reactions",\
+>             "value": "allow"\
+>           \},\
+>           \{\
+>             "name": "Content-Type",\
+>             "value": "multipart/alternative; boundary=\\"_000_TYQPR03MB9459CC334CB8947144F3D034AF952TYQPR03MB9459apcp_\\""\
+>           \},\
+>           \{\
+>             "name": "MIME-Version",\
+>             "value": "1.0"\
+>           \}\
+>         ],\
+>         "body": \{\
+>           "size": 0,\
+>           "base64_url_content": null,\
+>           "content": null,\
+>           "attachment_id": null\
+>         \},\
+>         "read_attachment_supported": null,\
+>         "parts": [\
+>           \{\
+>             "part_id": "0",\
+>             "mime_type": "text/plain",\
+>             "filename": "",\
+>             "headers": [\
+>               \{\
+>                 "name": "Content-Type",\
+>                 "value": "text/plain; charset=\\"us-ascii\\""\
+>               \},\
+>               \{\
+>                 "name": "Content-Transfer-Encoding",\
+>                 "value": "quoted-printable"\
+>               \}\
+>             ],\
+>             "body": \{\
+>               "size": 154,\
+>               "base64_url_content": null,\
+>               "content": "Hello\\r\\n\\r\\nOmar is now responsible for Documentation on Cedar, replacing Nina.\\r\\nThank you\\r\\n\\r\\nOu\\r\\n\\r\\n\\r\\nGet Outlook for Mac <https://aka.ms/GetOutlookForMac>\\r\\n",\
+>               "attachment_id": null\
+>             \},\
+>             "read_attachment_supported": null,\
+>             "parts": null\
+>           \},\
+>           \{\
+>             "part_id": "1",\
+>             "mime_type": "text/html",\
+>             "filename": "",\
+>             "headers": [\
+>               \{\
+>                 "name": "Content-Type",\
+>                 "value": "text/html; charset=\\"us-ascii\\""\
+>               \},\
+>               \{\
+>                 "name": "Content-Transfer-Encoding",\
+>                 "value": "quoted-printable"\
+>               \}\
+>             ],\
+>             "body": \{\
+>               "size": 1391,\
+>               "base64_url_content": null,\
+>               "content": "<html>\\r\\n<head>\\r\\n<meta http-equiv=\\"Content-Type\\" content=\\"text/html; charset=us-ascii\\">\\r\\n</head>\\r\\n<body>\\r\\n<div dir=\\"ltr\\" style=\\"font-family: Aptos, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);\\">\\r\\nHello</div>\\r\\n<div dir=\\"ltr\\" style=\\"font-family: Aptos, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);\\">\\r\\n<br>\\r\\n</div>\\r\\n<div dir=\\"ltr\\" style=\\"font-family: Aptos, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);\\">\\r\\nOmar is now responsible for Documentation on Cedar, replacing Nina.</div>\\r\\n<div dir=\\"ltr\\" style=\\"font-family: Aptos, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);\\">\\r\\nThank you</div>\\r\\n<div dir=\\"ltr\\" style=\\"font-family: Aptos, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);\\">\\r\\n<br>\\r\\n</div>\\r\\n<div dir=\\"ltr\\" style=\\"font-family: Aptos, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);\\">\\r\\nOu</div>\\r\\n<div dir=\\"ltr\\" style=\\"font-family: Aptos, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);\\">\\r\\n<br>\\r\\n</div>\\r\\n<div id=\\"ms-outlook-mobile-signature\\">\\r\\n<p dir=\\"ltr\\" style=\\"margin: 0in 0in 0.0001pt; font-family: Aptos, sans-serif; font-size: 12pt;\\">\\r\\nGet <a href=\\"https://aka.ms/GetOutlookForMac\\" data-outlook-id=\\"9ed2254d-18ce-4dd8-a31d-f8dab68bf95a\\" style=\\"margin-top: 0px; margin-bottom: 0px;\\">\\r\\nOutlook for Mac </a></p>\\r\\n</div>\\r\\n</body>\\r\\n</html>\\r\\n",\
+>               "attachment_id": null\
+>             \},\
+>             "read_attachment_supported": null,\
+>             "parts": null\
+>           \}\
+>         ]\
+>       \},\
+>       "size_estimate": 8527,\
+>       "classification_label_values": null\
+>     \},\
+>     \{\
+>       "id": "1a111fadfa5e5070",\
+>       "thread_id": "1a111fadfa5e5070",\
+>       "label_ids": [\
+>         "UNREAD",\
+>         "Label_9",\
+>         "Label_12",\
+>         "INBOX"\
+>       ],\
+>       "snippet": "Hi, The target end date for Requirement gathering on Beacon has been revised to November 25, 2026. Please update the Target End Date for this task Thanks and regards, Pp Get Outlook for Mac",\
+>       "history_id": "9142544",\
+>       "internal_date": "1791303012000",\
+>       "payload": \{\
+>         "part_id": "",\
+>         "mime_type": "multipart/alternative",\
+>         "filename": "",\
+>         "headers": [\
+>           \{\
+>             "name": "Delivered-To",\
+>             "value": "xxholyspellxx@gmail.com"\
+>           \},\
+>           \{\
+>             "name": "Received",\
+>             "value": "by 2002:a05:612c:2c12:b0:626:778b:ee09 with SMTP id ir18csp1889120vqb;        Tue, 6 Oct 2026 09:10:16 -0700 (PDT)"\
+>           \},\
+>           \{\
+>             "name": "X-Received",\
+>             "value": "by 2002:a17:90b:4f87:b0:3a8:1759:2217 with SMTP id 98e67ed59e1d1-3a81759270amr8252551a91.2.1791303016380;        Tue, 06 Oct 2026 09:10:16 -0700 (PDT)"\
+>           \},\
+>           \{\
+>             "name": "ARC-Seal",\
+>             "value": "i=2; a=rsa-sha256; t=1791303016; cv=pass;        d=google.com; s=arc-20260327;        b=r0Bj702wVm0oHLuyDYJUq85PJekxLCorH8qfb4TjtlqYnjMq2TDpraongbHTq0aJIq         AZdLPU55+tnNC1UnCaVjbX9jzUNUZVrcWYa97a0ipx2RvfC4NtyikyjIfS7vIxICgV0I         BJfoUAokTIXctiEVennMlOKyhIkb8+xCTVnELY0/oOLoeEx6RupQHjoWZTI8BXrs4LcG         y2Il6bNjPPl6W9I+Wn7+0hTFErXnFExB/QIY4rbLR+Dux9fyOfkwE75u6Ec0rVmYuMEk         R+TgAqXDUzJNCYqcMDRLQEDSZ7+qYu6BV1DPSu6JF9WVELrwqJfU8ZyJEmDTiH3gNP20         UoAg=="\
+>           \},\
+>           \{\
+>             "name": "ARC-Message-Signature",\
+>             "value": "i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20260327;        h=mime-version:content-language:accept-language:message-id:date         :thread-index:thread-topic:subject:to:from:dkim-signature;        bh=vTH6YZFSMkM/WFKWJWgaCBzrzQusZUBxKpuZmFEESzs=;        fh=pipKufzwYio+PM7ml80mQFyu1eTZGMCNCW+vVjLEu1M=;        b=FNI8feA0WcFGslnzCNir/z9RT13xsmfFkOHyjGgA0etRD8LpTAhXii6nh9/wrcv1PX         hcbx9XIjHYz1c4usr+5edC2HIYI6S6+KbPxCWBGGfNq2adXvxQRGZSNjyZlYXgjorFa0         XHHNPv68mY1SLLsui4Ic/7UzjiolZ3rlRuq59ZLb4I2gzm0mD16vE9YvMBdWktmf10W2         ZwLFN4LNThR4NrmdnI7sz3fcyHqCdCedLibuNEzkKRRaGq1KI6xXbbhy9RG75gXkHJ5k         APmIg9vd9/5O6EGbXXj8KDGcbn9vxfiYBq7nyLvgFsdrmHFezyvTPDaZ7y6MkyTEC+9z         9lgA==;        dara=google.com"\
+>           \},\
+>           \{\
+>             "name": "ARC-Authentication-Results",\
+>             "value": "i=2; mx.google.com;       dkim=pass header.i=@outlook.com header.s=selector1 header.b=gcWzlgP+;       arc=pass (i=1);       spf=pass (google.com: domain of ppou.16@outlook.com designates 2a01:111:f403:d405::3 as permitted sender) smtp.mailfrom=ppou.16@outlook.com;       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=outlook.com"\
+>           \},\
+>           \{\
+>             "name": "Return-Path",\
+>             "value": "<ppou.16@outlook.com>"\
+>           \},\
+>           \{\
+>             "name": "Received",\
+>             "value": "from TYDPR03CU002.outbound.protection.outlook.com (mail-japaneastazolkn190130003.outbound.protection.outlook.com. [2a01:111:f403:d405::3])        by mx.google.com with ESMTPS id 41be03b00d2f7-cd0ad7dc0b6si107241a12.276.2026.10.06.09.10.16        for <xxholyspellxx@gmail.com>        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);        Tue, 06 Oct 2026 09:10:16 -0700 (PDT)"\
+>           \},\
+>           \{\
+>             "name": "Received-SPF",\
+>             "value": "pass (google.com: domain of ppou.16@outlook.com designates 2a01:111:f403:d405::3 as permitted sender) client-ip=2a01:111:f403:d405::3;"\
+>           \},\
+>           \{\
+>             "name": "Authentication-Results",\
+>             "value": "mx.google.com;       dkim=pass header.i=@outlook.com header.s=selector1 header.b=gcWzlgP+;       arc=pass (i=1);       spf=pass (google.com: domain of ppou.16@outlook.com designates 2a01:111:f403:d405::3 as permitted sender) smtp.mailfrom=ppou.16@outlook.com;       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=outlook.com"\
+>           \},\
+>           \{\
+>             "name": "ARC-Seal",\
+>             "value": "i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none; b=ln1SUZOg9WVT6HDPYt00ojUuDqvH4v2pV7yqY/4WxXcaWvrIF+Vd/j65pQ0KNvzY22ZxdI8osycNh4IgPZOtGvKIy5WOEHF19bG9IYRC8LMdmFK5rb+IZXCg6suQjRS1LaDn81kHbsMW2OZC/En+pYhNOF9+8iU19toktyxm4bLJOKsxojC9BHr16r4iuosP24eJAEa1YfNrzHsMCrnKoz7Pzh+GU0lC/7TSWJvJDLFvWcTAF8nelWPOv6FyACeMFJAqgShyig+h1GdL+b92SsUHymkhbfLdSKZ12qCZ/HGaV81zodKMtYnQvbVbkb8Tg3JKgt243CzsX07RAuiofg=="\
+>           \},\
+>           \{\
+>             "name": "ARC-Message-Signature",\
+>             "value": "i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com; s=arcselector10001; h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1; bh=vTH6YZFSMkM/WFKWJWgaCBzrzQusZUBxKpuZmFEESzs=; b=flK+No4EG3RZdSYAQxuiDlPZlL0GiaCe1D2y5PArD44Q0R1927MKxQWhSnIX9CBwdjwiZs0DMLj+JxvjX7gu3217vT0HeC3Td4DT0iFDVO/sfiksDFnBGxUECHWFeQoHBH40xUaddDL90gPpGdYiDKZckN21TBGdpi3P446sn40ehWYSz301XRH/h019EnjiVRdQQO1FcoaiaErWqNScqET4FyBU3xPpblhTL5Cl03Y9LFmKIRKecYXHEPQQ6x1CPtlAnyj5AbXvguDFC8LNV+hDOv3YcIvaAvM1Bo9nSFvScbwWkf0BrlrQ4W/OttJxO4fs621/+xUcLyH9L9YsRQ=="\
+>           \},\
+>           \{\
+>             "name": "ARC-Authentication-Results",\
+>             "value": "i=1; mx.microsoft.com 1; spf=none; dmarc=none; dkim=none; arc=none"\
+>           \},\
+>           \{\
+>             "name": "DKIM-Signature",\
+>             "value": "v=1; a=rsa-sha256; c=relaxed/relaxed; d=outlook.com; s=selector1; h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck; bh=vTH6YZFSMkM/WFKWJWgaCBzrzQusZUBxKpuZmFEESzs=; b=gcWzlgP+feuOGmb7vZwCX6auo2IzmsN0T7y2dCKwNyYc1w8lVg8CU61aVhoLZhZqeGlFGGksodwRvYukxlg7qncUbIBG2jyoejauLv99mA22KEpXcTtHWeD0IJgdwcqJ3R2zchP7pdI8b/l7vW3yCD8VYmMmGHd60DVI70VIFjaOABWMSvi8YigcC6XQia+mobQEAgLKhkuTQQmcp+vPr0CMkQo4TIRY785DZ5j7+PBNvtI7U/n1BwZMDeWySU1O59uedu+rXWNUeKCCufoIwy47iKlvvxlCVKUqbhhT72+4A3Bg2fzHiMucrLDfkCtRpus8beQCn0F7wQa78OhxbA=="\
+>           \},\
+>           \{\
+>             "name": "Received",\
+>             "value": "from SI2PR04MB4185.apcprd04.prod.outlook.com (2603:1096:4:f6::11) by TYZPR04MB8253.apcprd04.prod.outlook.com (2603:1096:405:e4::12) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.472.20; Tue, 6 Oct 2026 16:10:13 +0000"\
+>           \},\
+>           \{\
+>             "name": "Received",\
+>             "value": "from SI2PR04MB4185.apcprd04.prod.outlook.com ([fe80::c8a7:649f:aa1d:9ab]) by SI2PR04MB4185.apcprd04.prod.outlook.com ([fe80::c8a7:649f:aa1d:9ab%4]) with mapi id 15.21.0472.015; Tue, 6 Oct 2026 16:10:12 +0000"\
+>           \},\
+>           \{\
+>             "name": "From",\
+>             "value": "PP Ou <ppou.16@outlook.com>"\
+>           \},\
+>           \{\
+>             "name": "To",\
+>             "value": "Phyu <xxholyspellxx@gmail.com>"\
+>           \},\
+>           \{\
+>             "name": "Subject",\
+>             "value": "Update"\
+>           \},\
+>           \{\
+>             "name": "Thread-Topic",\
+>             "value": "Update"\
+>           \},\
+>           \{\
+>             "name": "Thread-Index",\
+>             "value": "AQHdVa0VwGe6Vv9Qlkeh8KAleZ+8mw=="\
+>           \},\
+>           \{\
+>             "name": "Date",\
+>             "value": "Tue, 6 Oct 2026 16:10:12 +0000"\
+>           \},\
+>           \{\
+>             "name": "Message-ID",\
+>             "value": "<SI2PR04MB4185E02949C0808B695B3793EF952@SI2PR04MB4185.apcprd04.prod.outlook.com>"\
+>           \},\
+>           \{\
+>             "name": "Accept-Language",\
+>             "value": "en-US"\
+>           \},\
+>           \{\
+>             "name": "Content-Language",\
+>             "value": "en-US"\
+>           \},\
+>           \{\
+>             "name": "X-MS-Has-Attach",\
+>             "value": ""\
+>           \},\
+>           \{\
+>             "name": "X-MS-TNEF-Correlator",\
+>             "value": ""\
+>           \},\
+>           \{\
+>             "name": "x-ms-reactions",\
+>             "value": "allow"\
+>           \},\
+>           \{\
+>             "name": "x-ms-publictraffictype",\
+>             "value": "Email"\
+>           \},\
+>           \{\
+>             "name": "x-ms-traffictypediagnostic",\
+>             "value": "SI2PR04MB4185:EE_|TYZPR04MB8253:EE_"\
+>           \},\
+>           \{\
+>             "name": "x-ms-office365-filtering-correlation-id",\
+>             "value": "161220cf-2520-4e1d-7d2c-08df23c44d08"\
+>           \},\
+>           \{\
+>             "name": "x-microsoft-antispam",\
+>             "value": "BCL:0;ARA:14566002|25031999004|21061999006|24021099003|15080799012|51005399006|9400799043|8060799015|19110799012|31061999003|14030799003|8062599012|25010399006|40105399003|1602099012|10035399007|2607281247196008|102099032|3412199025|4302099013|440099028;"\
+>           \},\
+>           \{\
+>             "name": "x-microsoft-antispam-message-info",\
+>             "value": "QDoRnGzb9uFxfkImi4We36JgXlST7VnZwAGJ4Hpg+YtutVKfxuFDDtBa1x8b7uaD8Az5rycKafxBcnku+Kz6SlO9H+Xaf1ShXEZRIPm9biC/6gYRJ12KmxUEwuIpKfXe+NGqmlir8pSUv94YD6WAGqBIPR9dAskbPvHPUzau5JyitJ7N+iLydMAZ1mmNzM02XnsA5tvPE9/1kKOjKnD7eOTVXCeNNwvXH2Oxy8O/JfzJudgbvaFxTru8HTnjgTXoynAs13NHJhwkWXWJqWFJnKGPc+IiDl9923OtXrWVa+XR2WfPg1yOwLx2J413CMz9HDXEGlaV5ddoRQ84AYMdoiLTSemjJS6P+6KpwiqBVpWSSSFr3Z4oxeRlBCtvGcBK4S/dO4pGFRNhik3DE+X8iLWPhVjgKxvr2iZ22NJBoQQATSrWJTf1IMQUHyuJ3AjgToPSMXJGgL8Jcnenq/im9jTNiNsnqSwFmoU4T8hq9JU62T15EF3ipoVOw8CqVlcgHDMdOvHd6jIIO+1hkjctRqhph+r9/VifDzwwr1M/KqQnCpoFL1CrGodymi8g+Ho/bXxXZHaVtifNdfumYAZrs0EWoR2J+Sijhf+QGVbR5GonvpN+yEIK2Y0ztNBEXSZCyY208QwZR1+yDiSwny4mvmlprUTNmUSI7lHMdqEOmuBt5AFbJ9mniIgseaR/XvVMqWiCIAHdnUkbudJnGAv/nF9CG+M84WMdFXabSfFD0J9IHvowLuhJ1wFasRxQXOaqTVSnRyXTIlGup7EJFIpP3ngNJwmlizXo63sS1vvVvJmA9+xT3h+RKjlRi6LVNfssJW5Yq6r8DXrLZd5KMFSza9i/pv2j48dr0X11mcT4FCfK3AeOo/TS8RBl0oRh+82DhIXvht1eLbOZ4xqXWnSEA42v0KsLJb3yOy0K/4O5hYJSQnFtLbAWgd9N9JfdD+XgeHmGU/1ro+phhJvwG1HZkWZH4N4yet0Z0xti9sx3KM7UYfSkihHwh+dwnSQ1i1xs61Xx6VI2JfyCkx0JVcu8QBaQlJCl3vWZ5PYTl8dZL95wkbdz1yidcVLz52EoQa+2VCKfr3hkGX0oAK77DehXwniQTpxY4IFhXqtjBOFXvv0="\
+>           \},\
+>           \{\
+>             "name": "x-ms-exchange-antispam-messagedata-chunkcount",\
+>             "value": "1"\
+>           \},\
+>           \{\
+>             "name": "x-ms-exchange-antispam-messagedata-0",\
+>             "value": "U4tt0Pz9AZNK/eV/zXz+fmbLpNin6nEPZ3aM62jzls6ZVFXhFbowhr1WHmaJ0IxPayez8/IiDoWcGx1MWIlGSr7Q03uz6klF2mzqHRvXmWPzDOye/oO7mnqE4UDTWgdI89UOHJSLVmL8k+Lg4ml7Dh0kBkmbob61So39UQXjV32tuKuBQT25RaI6RjaktrIeiTRGsC+bdDMAnsuCFK9yxDkmiOjcK5rKjiTNUgWJFXrFlz10yEQ06plc+DRQIPTyJmqVzlB+y3m+W8aLYkQFv/21AIPD3sGcu9ipI8Kx08BCa7WZaiZa7KwGroESclhedjeiIodsxM/rF7sVup8kzDppWjQEOX7n+a0mZvEQCUcBOH9wVzzDPuMSjMpb4B1EhpjNkGsDoGqONhXsZsqyAg0qKKULPMxat1p7122lDD4wu+9s3KFvTyJgAahXIysIYbP80jmLUmVVvieS23hLaEnUeqJDjBdwMBOBJJU7upAIxR6G1pX2DFGEH1ygr98sXGTAwUpDieWUgWRZipQFh6XZSVY7S0BXGSyw21pC9GPDhWXooUu6PxvDsuJSD2M4jdJNszPPrAEIyK91JFQWLyHSSfVNcoegkLprEyUux/zOw+TFmzc3e6D+UIAkllmP5Djx5rMGrMlJ2xYPE+LwmiuM6lWQ7sBryan1jEMestPeDaqSZZpi2Ct/nhexo2dO5HRRCbGqR0H9Cx6mifCCrChN8MoPjVrrrSq3f3FNUKIq2u6R0s7SeZ/RvbtgiyxrWcAp3A7Ju17Nm0Ov2HJQM/TymcgwjseKQ3qRs/Cw8Jk5D2blQHgezdaS6EhlKU3w6VYhvMpBAbE22lE9owU5Z2UYiwXubZasSCsWjm12Oa+I+Aob1U0s7h+Ct8TOedorPIRj5WBzzBGS/5FDGCjpWTBxCjEX8PS5CwHKwX6pO8JZDftDW5jNcGuJ7vBSB70QfrB+zsSA1q4dHxfUkm3viQnotM5+LNj8vpTIrcXDdNzrnq77hX1RTVq0DxkSgHWtwpufagP2Bj1C8VGT7aMvuVak7c6n5xmwH9EUp7Jcv9ampu1pEtw0DuRc7OKKwWiMXtFQbgb5dNjV33+zOqvfzMhVXZ45xRr9MNliCSI5ckoZMBXv3pYa/zgDS7Olwg1hOvX9nN9rhqrbHVjkGemLXVeGnOn4L2I9JVOHgg6c26JvF9e3TEXCPC53bzUP/TfAlQddvdqOFTfjkEXIb9i1tTVAXWBPuaKdbAVgokzZoc2/jZNGU8vWwMcAaHsicHCJYle/U5Lh3iZUoawSLiXXhd4iZOzYaFJkwSohrz0wrgA8JQi8g+CBiIH00b1aUEBbjvG9fYuHOvEfDvv2zh5ph5XfzDgBaSm35uHnKXHVDEP02dMoZI7s3VMae3Wz4Z1g"\
+>           \},\
+>           \{\
+>             "name": "Content-Type",\
+>             "value": "multipart/alternative; boundary=\\"_000_SI2PR04MB4185E02949C0808B695B3793EF952SI2PR04MB4185apcp_\\""\
+>           \},\
+>           \{\
+>             "name": "MIME-Version",\
+>             "value": "1.0"\
+>           \},\
+>           \{\
+>             "name": "X-OriginatorOrg",\
+>             "value": "outlook.com"\
+>           \},\
+>           \{\
+>             "name": "X-MS-Exchange-CrossTenant-AuthAs",\
+>             "value": "Internal"\
+>           \},\
+>           \{\
+>             "name": "X-MS-Exchange-CrossTenant-AuthSource",\
+>             "value": "SI2PR04MB4185.apcprd04.prod.outlook.com"\
+>           \},\
+>           \{\
+>             "name": "X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg",\
+>             "value": "00000000-0000-0000-0000-000000000000"\
+>           \},\
+>           \{\
+>             "name": "X-MS-Exchange-CrossTenant-Network-Message-Id",\
+>             "value": "161220cf-2520-4e1d-7d2c-08df23c44d08"\
+>           \},\
+>           \{\
+>             "name": "X-MS-Exchange-CrossTenant-originalarrivaltime",\
+>             "value": "06 Oct 2026 16:10:12.2666 (UTC)"\
+>           \},\
+>           \{\
+>             "name": "X-MS-Exchange-CrossTenant-fromentityheader",\
+>             "value": "Hosted"\
+>           \},\
+>           \{\
+>             "name": "X-MS-Exchange-CrossTenant-id",\
+>             "value": "84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa"\
+>           \},\
+>           \{\
+>             "name": "X-MS-Exchange-CrossTenant-rms-persistedconsumerorg",\
+>             "value": "00000000-0000-0000-0000-000000000000"\
+>           \},\
+>           \{\
+>             "name": "X-MS-Exchange-Transport-CrossTenantHeadersStamped",\
+>             "value": "TYZPR04MB8253"\
+>           \}\
+>         ],\
+>         "body": \{\
+>           "size": 0,\
+>           "base64_url_content": null,\
+>           "content": null,\
+>           "attachment_id": null\
+>         \},\
+>         "read_attachment_supported": null,\
+>         "parts": [\
+>           \{\
+>             "part_id": "0",\
+>             "mime_type": "text/plain",\
+>             "filename": "",\
+>             "headers": [\
+>               \{\
+>                 "name": "Content-Type",\
+>                 "value": "text/plain; charset=\\"us-ascii\\""\
+>               \},\
+>               \{\
+>                 "name": "Content-Transfer-Encoding",\
+>                 "value": "quoted-printable"\
+>               \}\
+>             ],\
+>             "body": \{\
+>               "size": 238,\
+>               "base64_url_content": null,\
+>               "content": "Hi,\\r\\n\\r\\nThe target end date for Requirement gathering on Beacon has been revised to November 25, 2026.\\r\\nPlease update the Target End Date for this task\\r\\n\\r\\nThanks and regards,\\r\\nPp\\r\\n\\r\\n\\r\\nGet Outlook for Mac <https://aka.ms/GetOutlookForMac>\\r\\n",\
+>               "attachment_id": null\
+>             \},\
+>             "read_attachment_supported": null,\
+>             "parts": null\
+>           \},\
+>           \{\
+>             "part_id": "1",\
+>             "mime_type": "text/html",\
+>             "filename": "",\
+>             "headers": [\
+>               \{\
+>                 "name": "Content-Type",\
+>                 "value": "text/html; charset=\\"us-ascii\\""\
+>               \},\
+>               \{\
+>                 "name": "Content-Transfer-Encoding",\
+>                 "value": "quoted-printable"\
+>               \}\
+>             ],\
+>             "body": \{\
+>               "size": 1487,\
+>               "base64_url_content": null,\
+>               "content": "<html>\\r\\n<head>\\r\\n<meta http-equiv=\\"Content-Type\\" content=\\"text/html; charset=us-ascii\\">\\r\\n</head>\\r\\n<body>\\r\\n<div dir=\\"ltr\\" style=\\"font-family: Aptos, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);\\">\\r\\nHi,&nbsp;</div>\\r\\n<div dir=\\"ltr\\" style=\\"font-family: Aptos, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);\\">\\r\\n<br>\\r\\n</div>\\r\\n<div style=\\"font-family: Aptos, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);\\">\\r\\nThe target end date for Requirement gathering on Beacon has been revised to November 25, 2026.<br>\\r\\nPlease update the Target End Date for this task&nbsp;</div>\\r\\n<div dir=\\"ltr\\" style=\\"font-family: Aptos, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);\\">\\r\\n<br>\\r\\n</div>\\r\\n<div dir=\\"ltr\\" style=\\"font-family: Aptos, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);\\">\\r\\nThanks and regards,&nbsp;</div>\\r\\n<div dir=\\"ltr\\" style=\\"font-family: Aptos, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);\\">\\r\\nPp</div>\\r\\n<div dir=\\"ltr\\" style=\\"font-family: Aptos, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);\\">\\r\\n<br>\\r\\n</div>\\r\\n<div id=\\"ms-outlook-mobile-signature\\">\\r\\n<p dir=\\"ltr\\" style=\\"margin: 0in 0in 0.0001pt; font-family: Aptos, sans-serif; font-size: 12pt;\\">\\r\\nGet <a href=\\"https://aka.ms/GetOutlookForMac\\" data-outlook-id=\\"e027319c-f194-42ec-915f-2d5b2d045b25\\" style=\\"margin-top: 0px; margin-bottom: 0px;\\">\\r\\nOutlook for Mac </a></p>\\r\\n</div>\\r\\n</body>\\r\\n</html>\\r\\n",\
+>               "attachment_id": null\
+>             \},\
+>             "read_attachment_supported": null,\
+>             "parts": null\
+>           \}\
+>         ]\
+>       \},\
+>       "size_estimate": 12563,\
+>       "classification_label_values": null\
+>     \},\
+>     \{\
+>       "id": "1a111fa5321793b8",\
+>       "thread_id": "1a111fa5321793b8",\
+>       "label_ids": [\
+>         "UNREAD",\
+>         "Label_9",\
+>         "Label_12",\
+>         "INBOX"\
+>       ],\
+>       "snippet": "Hi, The Project kick off meeting for Atlas is now completed. Please update its status in the project tracker. There are no other changes to be reported. Regards, PP Get Outlook for Mac",\
+>       "history_id": "9142543",\
+>       "internal_date": "1791302976000",\
+>       "payload": \{\
+>         "part_id": "",\
+>         "mime_type": "multipart/alternative",\
+>         "filename": "",\
+>         "headers": [\
+>           \{\
+>             "name": "Delivered-To",\
+>             "value": "xxholyspellxx@gmail.com"\
+>           \},\
+>           \{\
+>             "name": "Received",\
+>             "value": "by 2002:a05:612c:2c12:b0:626:778b:ee09 with SMTP id ir18csp1888076vqb;        Tue, 6 Oct 2026 09:09:40 -0700 (PDT)"\
+>           \},\
+>           \{\
+>             "name": "X-Received",\
+>             "value": "by 2002:a05:6a20:3d1a:b0:3df:15f4:756e with SMTP id adf61e73a8af0-3e0bced94ccmr22748947637.1.1791302980485;        Tue, 06 Oct 2026 09:09:40 -0700 (PDT)"\
+>           \},\
+>           \{\
+>             "name": "ARC-Seal",\
+>             "value": "i=2; a=rsa-sha256; t=1791302980; cv=pass;        d=google.com; s=arc-20260327;        b=gZ/kQkViXLKpeAly6NP09pddpWkc8ItTQQHguHS/9wU/lCfj+MecZn9lxfb3RTZkbo         jsgHUa0gwl/MNXz2Tg+IgEj0kO54+F07z/JmbipQbtN4Vda0OvWFY8VvR1VnXJ151h7d         NeHbi7Za0gqdI42Hh8HusbduVpuIDND9b4LkBBB2v7jEmQwLWRmeh6WbjHJmhGkHRL+W         RqbtDf23Z+zBKYiJiEYN1Rq76kcd1r5G8/6eUPI2dWBweoRGyGHSGsBTE8G669dMqtsA         z+IXBqUn6DtXF6K5zBCyA2Ynf9M4cXFisArshU9sGGShsjypX/p7JzUNEDvgpjluON7u         WSvA=="\
+>           \},\
+>           \{\
+>             "name": "ARC-Message-Signature",\
+>             "value": "i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20260327;        h=mime-version:content-language:accept-language:message-id:date         :thread-index:thread-topic:subject:to:from:dkim-signature;        bh=6+VjoTk26sykH5Vijj1Y3DxnArhE1/b+R/BnU4fN6/8=;        fh=pipKufzwYio+PM7ml80mQFyu1eTZGMCNCW+vVjLEu1M=;        b=EVG/LPPnQVchlqUkEdJKoKu9CyivY2ZQXaCkakuKPdVnagABoWwGe91y1cGXpaeDMO         J3h4ohvhl+USShPsVgzxksdD2u3fbHN+O8Cdp9CPlw6XLsIi0nrVVgwEg3N6rGr8vBML         mFCCJpbYOteVm/I48fuS1r6stXm6bdA+XSMAq7/IHaFLMZmC+XrsyG8kJs5RRxGbBAqz         MNdmWSERMZc7YNBAHBK5sDZYLwZFXpRYvYWcIMxY8HOwkke6WyiYPNday/iSe5JhUMm5         O7QNpy7IBQ/WSYbspel8sqS02nRu+Y8Qk4EUZ1BpnO7SHNg9Ise+CuRcZ64yHSU74wBJ         /yGw==;        dara=google.com"\
+>           \},\
+>           \{\
+>             "name": "ARC-Authentication-Results",\
+>             "value": "i=2; mx.google.com;       dkim=pass header.i=@outlook.com header.s=selector1 header.b=RjKhprAM;       arc=pass (i=1);       spf=pass (google.com: domain of ppou.16@outlook.com designates 2a01:111:f403:d405::3 as permitted sender) smtp.mailfrom=ppou.16@outlook.com;       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=outlook.com"\
+>           \},\
+>           \{\
+>             "name": "Return-Path",\
+>             "value": "<ppou.16@outlook.com>"\
+>           \},\
+>           \{\
+>             "name": "Received",\
+>             "value": "from TYDPR03CU002.outbound.protection.outlook.com (mail-japaneastazolkn190130003.outbound.protection.outlook.com. [2a01:111:f403:d405::3])        by mx.google.com with ESMTPS id d2e1a72fcca58-8918ae9f0a1si383727b3a.248.2026.10.06.09.09.40        for <xxholyspellxx@gmail.com>        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);        Tue, 06 Oct 2026 09:09:40 -0700 (PDT)"\
+>           \},\
+>           \{\
+>             "name": "Received-SPF",\
+>             "value": "pass (google.com: domain of ppou.16@outlook.com designates 2a01:111:f403:d405::3 as permitted sender) client-ip=2a01:111:f403:d405::3;"\
+>           \},\
+>           \{\
+>             "name": "Authentication-Results",\
+>             "value": "mx.google.com;       dkim=pass header.i=@outlook.com header.s=selector1 header.b=RjKhprAM;       arc=pass (i=1);       spf=pass (google.com: domain of ppou.16@outlook.com designates 2a01:111:f403:d405::3 as permitted sender) smtp.mailfrom=ppou.16@outlook.com;       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=outlook.com"\
+>           \},\
+>           \{\
+>             "name": "ARC-Seal",\
+>             "value": "i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none; b=U+5cgsNaA/RBqQsVBAjok9pW3EfJsfalf9qF+5VXyS0CZc4HnX3qZvWHlCdVoIojiuYk4j+MvvZwnwTv9wF0KpMikA4n5x0ErPDqms5yh3mtnoQ0au8RZ6jELDJxPE/VkiZPVbtl6nn/QQou9sQHY8Gq85bv2EOhaFuzKX8weiWYHZ8RQfLB/I9eQsTy1CVKzUc4YlVsDfk35/31NwVQRIj1X51dN9Crkod9QKvMMNLnmj9SILViGy/JffsVtmbAonG4DMIYE1BbrbwpxjwN7bnbWkEATdafprlEbBf/qnXtKf2op6MwGKiK21gURMKWsH+peGZfk1sDAI7nCD6eCQ=="\
+>           \},\
+>           \{\
+>             "name": "ARC-Message-Signature",\
+>             "value": "i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com; s=arcselector10001; h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1; bh=6+VjoTk26sykH5Vijj1Y3DxnArhE1/b+R/BnU4fN6/8=; b=gz7N7W3zXj6Ysx7uQfq6GXekLh36yyOFZXCkQ3bMG2Gndflu+2EqL6WegVOt66Hptejf0ZmvKysXydCDeKve5D9ldqf+InkiCNX9Tcd/fP2EHIA/qCZUokBNcBiIfdmS1Dp/w27Cv/YhHbBDoUK5OKjkieiWyFOxJXy2vyjORzwJevKylrlDDO0pHUnn0SZ4c5vV0GoG+6RAbsPH2r9Ma+KwNUetBhHY5uw8/GkW1pWGzVoIY0NkEXNNDshL9WVlw/q0B0xsvb6OMYVdLZViiL8AsEkvtI6wRv4/C/TARQ6EYoak/AJ4z9YM6ZavrgWHgz+HVbRf9aS+BwHtLYDOrg=="\
+>           \},\
+>           \{\
+>             "name": "ARC-Authentication-Results",\
+>             "value": "i=1; mx.microsoft.com 1; spf=none; dmarc=none; dkim=none; arc=none"\
+>           \},\
+>           \{\
+>             "name": "DKIM-Signature",\
+>             "value": "v=1; a=rsa-sha256; c=relaxed/relaxed; d=outlook.com; s=selector1; h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck; bh=6+VjoTk26sykH5Vijj1Y3DxnArhE1/b+R/BnU4fN6/8=; b=RjKhprAMQKHMh02noDXyH6wdjh9oDpccEqTVNrhJG5f4uliVUTlpETX0emVmvlEkfROJjApdm6lDrRVAu9NlyiD0S2174adfubWA/t58Kj0nUighA4m4/LVkkpFSL5ppXWH7Gf52sPt8XYnVhODUpNAAOXQzAfPqmwny0d5fVg/HALkQ6+xDaj+/e/MbZqtOOCLnd2TmCt60iUAvl4smN9REuXgapGJKxLDKoQDxSUEsgfbnUwjTFgb+ItaGmmlT1KBzM49S3553O5sBocrCSCKyqwKwDbPjmcrjCA9UPnpoxX3JqL/5r/wwkoXxYNV02jE9j9Qxk4euaHLLuZLjEw=="\
+>           \},\
+>           \{\
+>             "name": "Received",\
+>             "value": "from SI2PR04MB4185.apcprd04.prod.outlook.com (2603:1096:4:f6::11) by KUZPR04MB8984.apcprd04.prod.outlook.com (2603:1096:d10:2f::11) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.472.20; Tue, 6 Oct 2026 16:09:37 +0000"\
+>           \},\
+>           \{\
+>             "name": "Received",\
+>             "value": "from SI2PR04MB4185.apcprd04.prod.outlook.com ([fe80::c8a7:649f:aa1d:9ab]) by SI2PR04MB4185.apcprd04.prod.outlook.com ([fe80::c8a7:649f:aa1d:9ab%4]) with mapi id 15.21.0472.015; Tue, 6 Oct 2026 16:09:36 +0000"\
+>           \},\
+>           \{\
+>             "name": "From",\
+>             "value": "PP Ou <ppou.16@outlook.com>"\
+>           \},\
+>           \{\
+>             "name": "To",\
+>             "value": "Phyu <xxholyspellxx@gmail.com>"\
+>           \},\
+>           \{\
+>             "name": "Subject",\
+>             "value": "Project update"\
+>           \},\
+>           \{\
+>             "name": "Thread-Topic",\
+>             "value": "Project update"\
+>           \},\
+>           \{\
+>             "name": "Thread-Index",\
+>             "value": "AQHdVazeE2wjxNCGnEur7dqxUTJ0tg=="\
+>           \},\
+>           \{\
+>             "name": "Date",\
+>             "value": "Tue, 6 Oct 2026 16:09:36 +0000"\
+>           \},\
+>           \{\
+>             "name": "Message-ID",\
+>             "value": "<SI2PR04MB4185760BFAA24EC1A37D123DEF952@SI2PR04MB4185.apcprd04.prod.outlook.com>"\
+>           \},\
+>           \{\
+>             "name": "Accept-Language",\
+>             "value": "en-US"\
+>           \},\
+>           \{\
+>             "name": "Content-Language",\
+>             "value": "en-US"\
+>           \},\
+>           \{\
+>             "name": "X-MS-Has-Attach",\
+>             "value": ""\
+>           \},\
+>           \{\
+>             "name": "X-MS-TNEF-Correlator",\
+>             "value": ""\
+>           \},\
+>           \{\
+>             "name": "x-ms-reactions",\
+>             "value": "allow"\
+>           \},\
+>           \{\
+>             "name": "x-ms-publictraffictype",\
+>             "value": "Email"\
+>           \},\
+>           \{\
+>             "name": "x-ms-traffictypediagnostic",\
+>             "value": "SI2PR04MB4185:EE_|KUZPR04MB8984:EE_"\
+>           \},\
+>           \{\
+>             "name": "x-ms-office365-filtering-correlation-id",\
+>             "value": "b8154cc7-5d5e-4ced-4a34-08df23c437c7"\
+>           \},\
+>           \{\
+>             "name": "x-microsoft-antispam",\
+>             "value": "BCL:0;ARA:14566002|15080799012|51005399006|14030799003|8062599012|31061999003|25010399006|9400799043|8060799015|19110799012|25031999004|21061999006|24021099003|2607281247196008|3412199025|440099028|4302099013|102099032|1602099012|40105399003|10035399007;"\
+>           \},\
+>           \{\
+>             "name": "x-microsoft-antispam-message-info",\
+>             "value": "27X+R9A8gmY3zY0stnioutOCvv4oxlsKy8PJX3LwkJWkuR4KmlXC9HxINa3wU1W1SDQOcQ10Jmhpe7u/ncW6C1bush+8f6wrb73h1emcDbT+sm3CkxdSRzBmu+ZSJBgM4JDmEG+OZEphyejXUjviEjZO8v7TJEKvY2NY52eqexKSgZguIPsnsaXVG3F55WhFmdDD1W+brXx783e7CoBqGBPUvRTxjb3LHJXAlMFUAkB6w+YzReBI9auBb090yP+iSRwROG0KrvEZ0bqk/ffiIP8m3kKpuePto6M6E/Sv2NPFhkrACDpLkBdFy8E55L2UXjmsW3LBZkqn8W4aeGheWC2Ec0PjZlBjYyEgTRpY1wzZe/8fJROxHNFtal2H9NY2zk5/6eoPF0oerXuJlNCeRcaPvI+UmnJ6fXmGMwjxmPCNrT7rneyc9Ef5H9PBRYMmdae0+Xv18Gha5+y1H1lLGGUQMZE72L/elHL8hwjujnDSPOxKgz50dHYhzb49n1GHvk1SK8exKt9/MJY/fkQRC3ZEs3hH+D2iMJOm6dPAoI+NYVi1l7I6gbQyVEt9ewPX+n5ZO8bH8iDDDEAM2qPhvh3dsuE4Qtv/z+rX/HirbhY2E3t4UshjXCVbRakw41Y0UZRl37xNDN6oDj+cSZuLluINk9nMo2w9M+g8HTm74/Fyvlf6KrPEIV0GJ1MDA6pfNOYRFvaeaSH+c9ACcj6mci4l1v1QeDdfRHKWzgXNcooo5D7aOOVVaMZDem4s+JVedZiDZPQJd55d3ScCO8wMxpR5J+pdE9obdVkjS9SHzNz0tOKDnbdDUwCVkQYy+xgYr07fKzjyTZdiyhGHfVqXEEqNggOFDmmNgFlTqy1+Jc8Ijt0Aj82zByoVGoGF0QnGIpWS7AwB9spHbiKnSpTy5c71Ahe2X08vc0ry1/Q6eOYF5ukUAfqL81rRUVTVm8zzln/hAQ6/374ZhPyuo7SiLD0AY8/znbg9pSqDHG82jzZHEDWtk5ndGxP9oV5lgCRkBQKMrb/KQ3+udEXsuvw1xIo4Cu8Dn5ry8JhonENZM50wxNZXuTNmrR4xm7hqDej3k6gWn7Lgy2rojaE21U/0jjiM3FAV86nw9Wi4aId3ljg="\
+>           \},\
+>           \{\
+>             "name": "x-ms-exchange-antispam-messagedata-chunkcount",\
+>             "value": "1"\
+>           \},\
+>           \{\
+>             "name": "x-ms-exchange-antispam-messagedata-0",\
+>             "value": "9bOHFvuOeJJy4GrR8mYTzOdRyRJroBiR9apmzxjr699g9zUL+X6lDeLDftVqYaGvgdRmTZ+40dzO1k7qaYqDWx2Oe/96D4gBFdK6/hJdmfII78GKQT6XVUMQ86m/53Vp91OhxhTj6PdJ4S6SSJ6k6IheiM9mMQmGhzsPV1r7Yn2MZApP1DaM0W2git9vKHOiae7O7PvQFfBEfZW4mhlMYP2MWpKc/0nc59OvgQnG2WdG+jcFcY3ROUrvSYEDsU6AOI8th2fclzkue+24+P6MSEKMhks6EZUqXAqxFOd8zArcb1fzs0mOy58NkAY/ss/U3aQ11nCaw9DV08syQ1uHlSGIpDxMrKCd4gVd9W2pM8yqm5gTNkoyC/SsXMUGB4IqcjsRHIy/sOP8cIid+5CeN1gN8oxQWEdzWXXer3fCqoA7MNQ233ogrZzCivVZDXNuym74t+iK0aRMap8PSuJaMgP71rPw7zJR11Q2VQpZWv3XoURCwKnafDAclygaaOf0EyDJi/t0AuuNhzR7gYdPCfPMoFKQA/I5D5KhOa9NtK81UV52z1akdJMvgdtliAWxS0ejKPXGJfjIGMU3DCV6OQRxn96ThhIglKuEJvvF+SKEE0L5VH8HLm03aFnq32ARmxtcKyyf3xRlWkQkuE/aQedlwhIEvaGdpqzEwJhd9jr76aoc5t+D/5unuI6MsT3q3vnVq0hdk9ZW2CXwadx08G0Srz7pC5sbKoJLDi9ispam8KVWvFi/GmKJscavX4eZrOcHgVGlf8QaWGKk7p7FJ5T8J2cfHVjigYfXUNJKzhsSsJdkdRnT/oSnIHiDldU6YPTuWSKk+rFzK/eDp7U6tAAOKqrxWo38SyRNtQbkv2EMCxiRx/e46RCyxZPD3VkzrOru9pkPaOwbQi21GinMqcBRnu+zzYJ6Nj3/ctL/peXXcVPUu2QJbSUuf4qb/IkoIfsBAHoSxKBi5JzbptPW0wgJFyCRZavpfHRGQ1poJEO5uqnfKHS2RpYy6nJ2QSDil3ugII4yTeQB+xyFC8MNNmUMyXw8gy3/8clWhbjN3Bi+m2i/WjjvvBdiUiN4bv8zhCXysdcCeCqUZeyg1oWxNtv8YSD0cNSxKH1WfpeM8y7q9+H/MoKMJofvMU6B+isVXnNQt5IiJ6x/mnmr/OVkCkUAC8I4BB8kS6U2pkePCXmMtjsJaEjb1LzjUHElVe09hSxbSxB+7Lx0JR921Pq8MfKhSxIlcW4C9L67EGzPeAvrmV1LQQNCVUKmDXWuFzFiSkWaYgATo68g4PITBLcmaNmyVPotaSIqVMcdEZK+OU5q+KmPFbI5kFWcozA9ok6iyya0jf9zIYAVxAmUDKJJ6jFoQ6TadgH/1rNg53IbdYQ8wLcd2WLOK8XShcquZDD5"\
+>           \},\
+>           \{\
+>             "name": "Content-Type",\
+>             "value": "multipart/alternative; boundary=\\"_000_SI2PR04MB4185760BFAA24EC1A37D123DEF952SI2PR04MB4185apcp_\\""\
+>           \},\
+>           \{\
+>             "name": "MIME-Version",\
+>             "value": "1.0"\
+>           \},\
+>           \{\
+>             "name": "X-OriginatorOrg",\
+>             "value": "outlook.com"\
+>           \},\
+>           \{\
+>             "name": "X-MS-Exchange-CrossTenant-AuthAs",\
+>             "value": "Internal"\
+>           \},\
+>           \{\
+>             "name": "X-MS-Exchange-CrossTenant-AuthSource",\
+>             "value": "SI2PR04MB4185.apcprd04.prod.outlook.com"\
+>           \},\
+>           \{\
+>             "name": "X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg",\
+>             "value": "00000000-0000-0000-0000-000000000000"\
+>           \},\
+>           \{\
+>             "name": "X-MS-Exchange-CrossTenant-Network-Message-Id",\
+>             "value": "b8154cc7-5d5e-4ced-4a34-08df23c437c7"\
+>           \},\
+>           \{\
+>             "name": "X-MS-Exchange-CrossTenant-originalarrivaltime",\
+>             "value": "06 Oct 2026 16:09:36.5944 (UTC)"\
+>           \},\
+>           \{\
+>             "name": "X-MS-Exchange-CrossTenant-fromentityheader",\
+>             "value": "Hosted"\
+>           \},\
+>           \{\
+>             "name": "X-MS-Exchange-CrossTenant-id",\
+>             "value": "84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa"\
+>           \},\
+>           \{\
+>             "name": "X-MS-Exchange-CrossTenant-rms-persistedconsumerorg",\
+>             "value": "00000000-0000-0000-0000-000000000000"\
+>           \},\
+>           \{\
+>             "name": "X-MS-Exchange-Transport-CrossTenantHeadersStamped",\
+>             "value": "KUZPR04MB8984"\
+>           \}\
+>         ],\
+>         "body": \{\
+>           "size": 0,\
+>           "base64_url_content": null,\
+>           "content": null,\
+>           "attachment_id": null\
+>         \},\
+>         "read_attachment_supported": null,\
+>         "parts": [\
+>           \{\
+>             "part_id": "0",\
+>             "mime_type": "text/plain",\
+>             "filename": "",\
+>             "headers": [\
+>               \{\
+>                 "name": "Content-Type",\
+>                 "value": "text/plain; charset=\\"us-ascii\\""\
+>               \},\
+>               \{\
+>                 "name": "Content-Transfer-Encoding",\
+>                 "value": "quoted-printable"\
+>               \}\
+>             ],\
+>             "body": \{\
+>               "size": 232,\
+>               "base64_url_content": null,\
+>               "content": "Hi,\\r\\n\\r\\nThe Project kick off meeting for Atlas is now completed. Please update its status in the project tracker.\\r\\nThere are no other changes to be reported.\\r\\n\\r\\nRegards, PP\\r\\n\\r\\n\\r\\nGet Outlook for Mac <https://aka.ms/GetOutlookForMac>\\r\\n",\
+>               "attachment_id": null\
+>             \},\
+>             "read_attachment_supported": null,\
+>             "parts": null\
+>           \},\
+>           \{\
+>             "part_id": "1",\
+>             "mime_type": "text/html",\
+>             "filename": "",\
+>             "headers": [\
+>               \{\
+>                 "name": "Content-Type",\
+>                 "value": "text/html; charset=\\"us-ascii\\""\
+>               \},\
+>               \{\
+>                 "name": "Content-Transfer-Encoding",\
+>                 "value": "quoted-printable"\
+>               \}\
+>             ],\
+>             "body": \{\
+>               "size": 1360,\
+>               "base64_url_content": null,\
+>               "content": "<html>\\r\\n<head>\\r\\n<meta http-equiv=\\"Content-Type\\" content=\\"text/html; charset=us-ascii\\">\\r\\n</head>\\r\\n<body>\\r\\n<div dir=\\"ltr\\" style=\\"font-family: Aptos, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);\\">\\r\\nHi,&nbsp;</div>\\r\\n<div dir=\\"ltr\\" style=\\"font-family: Aptos, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);\\">\\r\\n<br>\\r\\n</div>\\r\\n<div dir=\\"ltr\\" style=\\"font-family: Aptos, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);\\">\\r\\nThe Project kick off meeting for Atlas is now completed. Please update its status in the project tracker.<br>\\r\\nThere are no other changes to be reported.</div>\\r\\n<div dir=\\"ltr\\" style=\\"font-family: Aptos, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);\\">\\r\\n<br>\\r\\n</div>\\r\\n<div dir=\\"ltr\\" style=\\"font-family: Aptos, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);\\">\\r\\nRegards, PP</div>\\r\\n<div dir=\\"ltr\\" style=\\"font-family: Aptos, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);\\">\\r\\n<br>\\r\\n</div>\\r\\n<div id=\\"ms-outlook-mobile-signature\\">\\r\\n<p dir=\\"ltr\\" style=\\"margin: 0in 0in 0.0001pt; font-family: Aptos, sans-serif; font-size: 12pt;\\">\\r\\nGet <a href=\\"https://aka.ms/GetOutlookForMac\\" data-outlook-id=\\"d439d059-0c77-4ded-a794-fc89c23e9d55\\" style=\\"margin-top: 0px; margin-bottom: 0px;\\">\\r\\nOutlook for Mac </a></p>\\r\\n</div>\\r\\n</body>\\r\\n</html>\\r\\n",\
+>               "attachment_id": null\
+>             \},\
+>             "read_attachment_supported": null,\
+>             "parts": null\
+>           \}\
+>         ]\
+>       \},\
+>       "size_estimate": 12441,\
+>       "classification_label_values": null\
+>     \}\
+>   ]\
+> \}\
+> ```\
+>\
+> - Ran `python3 - <<'PY'\
+> from openpyxl import load_workbook\
+> from pathlib import Path\
+> for p in sorted(Path('S01').glob('*.xlsx')):\
+>  print('\\n###',p.name)\
+>  wb=load_workbook(p,data_only=False)\
+>  for ws in wb.worksheets:\
+>   print('SHEET',ws.title,ws.max_row,ws.max_column)\
+>   for row in ws.iter_rows():\
+>    vals=[c.value for c in row]\
+>    if any(v is not None for v in vals): print(row[0].row, vals)\
+> PY`\
+>\
+> - Ran `/Users/phyu/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 - <<'PY'\
+> try:\
+>  import openpyxl; print('ok')\
+> except Exception as e: print(e)\
+> PY`\
+>\
+> - Ran `/Users/phyu/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 - <<'PY'\
+> from openpyxl import load_workbook\
+> from pathlib import Path\
+> for p in sorted(Path('S01').glob('*.xlsx')):\
+>  print('\\n###',p.name)\
+>  wb=load_workbook(p,data_only=False)\
+>  for ws in wb.worksheets:\
+>   print('SHEET',ws.title,ws.max_row,ws.max_column)\
+>   for row in ws.iter_rows():\
+>    vals=[c.value for c in row]\
+>    if any(v is not None for v in vals): print(row[0].row, vals)\
+> PY`\
+>\
+> </details>\
+>\
+> I found the five S01 workbooks and five Gmail messages under the Project label. I\'92m cross-checking each email against the exact task rows and field headers now; the confirmed updates are concentrated in Atlas, Beacon, Cedar, Delta, and Evergreen.\
+>\
+> <details><summary>Explored a file, ran a command, called a tool</summary>\
+>\
+> MCP tool call\
+>\
+> codex_apps.gmail.search_emails\
+>\
+> ```json\
+> \{\
+>   "query": "label:Project",\
+>   "max_results": 100\
+> \}\
+> ```\
+>\
+> ```text\
+> Action completed.\
+> ```\
+>\
+> ```json\
+> \{\
+>   "emails": [\
+>     \{\
+>       "id": "1a111fca1bf47e97",\
+>       "thread_id": "1a111fadfa5e5070",\
+>       "from_": "PP Ou ppou.16@outlook.com",\
+>       "to": [\
+>         "Phyu xxholyspellxx@gmail.com"\
+>       ],\
+>       "cc": [],\
+>       "bcc": [],\
+>       "subject": "Update",\
+>       "snippet": "Please record the following updates in the Evergreen project tracker: Project kick off meeting is completed. Documentation is in progress. Get Outlook for Mac",\
+>       "labels": [\
+>         "UNREAD",\
+>         "Label_9",\
+>         "Label_12",\
+>         "INBOX"\
+>       ],\
+>       "has_attachment": false,\
+>       "attachments": [],\
+>       "inline_images": [],\
+>       "email_ts": "2026-10-06T16:12:07+00:00",\
+>       "display_url": "https://mail.google.com/mail/u/?authuser=xxholyspellxx%40gmail.com#all/1a111fca1bf47e97",\
+>       "display_title": "Update"\
+>     \},\
+>     \{\
+>       "id": "1a111fc099f9728c",\
+>       "thread_id": "1a111fc099f9728c",\
+>       "from_": "Ou Pwint Phyu o.phyu@gwmail.gwu.edu",\
+>       "to": [\
+>         "Phyu xxholyspellxx@gmail.com"\
+>       ],\
+>       "cc": [],\
+>       "bcc": [],\
+>       "subject": "(No Subject)",\
+>       "snippet": "Requirement gathering for Delta is now in progress. Its target end date has also been revised to November 23, 2026. Thank you! Get Outlook for Mac",\
+>       "labels": [\
+>         "UNREAD",\
+>         "Label_9",\
+>         "INBOX"\
+>       ],\
+>       "has_attachment": false,\
+>       "attachments": [],\
+>       "inline_images": [],\
+>       "email_ts": "2026-10-06T16:11:29+00:00",\
+>       "display_url": "https://mail.google.com/mail/u/?authuser=xxholyspellxx%40gmail.com#all/1a111fc099f9728c",\
+>       "display_title": "(No Subject)"\
+>     \},\
+>     \{\
+>       "id": "1a111fba0f7523dc",\
+>       "thread_id": "1a111fba0f7523dc",\
+>       "from_": "Ou Pwint Phyu o.phyu@gwmail.gwu.edu",\
+>       "to": [\
+>         "Phyu xxholyspellxx@gmail.com"\
+>       ],\
+>       "cc": [],\
+>       "bcc": [],\
+>       "subject": "Hello",\
+>       "snippet": "Hello Omar is now responsible for Documentation on Cedar, replacing Nina. Thank you Ou Get Outlook for Mac",\
+>       "labels": [\
+>         "UNREAD",\
+>         "Label_9",\
+>         "INBOX"\
+>       ],\
+>       "has_attachment": false,\
+>       "attachments": [],\
+>       "inline_images": [],\
+>       "email_ts": "2026-10-06T16:11:00+00:00",\
+>       "display_url": "https://mail.google.com/mail/u/?authuser=xxholyspellxx%40gmail.com#all/1a111fba0f7523dc",\
+>       "display_title": "Hello"\
+>     \},\
+>     \{\
+>       "id": "1a111fadfa5e5070",\
+>       "thread_id": "1a111fadfa5e5070",\
+>       "from_": "PP Ou ppou.16@outlook.com",\
+>       "to": [\
+>         "Phyu xxholyspellxx@gmail.com"\
+>       ],\
+>       "cc": [],\
+>       "bcc": [],\
+>       "subject": "Update",\
+>       "snippet": "Hi, The target end date for Requirement gathering on Beacon has been revised to November 25, 2026. Please update the Target End Date for this task Thanks and regards, Pp Get Outlook for Mac",\
+>       "labels": [\
+>         "UNREAD",\
+>         "Label_9",\
+>         "Label_12",\
+>         "INBOX"\
+>       ],\
+>       "has_attachment": false,\
+>       "attachments": [],\
+>       "inline_images": [],\
+>       "email_ts": "2026-10-06T16:10:12+00:00",\
+>       "display_url": "https://mail.google.com/mail/u/?authuser=xxholyspellxx%40gmail.com#all/1a111fadfa5e5070",\
+>       "display_title": "Update"\
+>     \},\
+>     \{\
+>       "id": "1a111fa5321793b8",\
+>       "thread_id": "1a111fa5321793b8",\
+>       "from_": "PP Ou ppou.16@outlook.com",\
+>       "to": [\
+>         "Phyu xxholyspellxx@gmail.com"\
+>       ],\
+>       "cc": [],\
+>       "bcc": [],\
+>       "subject": "Project update",\
+>       "snippet": "Hi, The Project kick off meeting for Atlas is now completed. Please update its status in the project tracker. There are no other changes to be reported. Regards, PP Get Outlook for Mac",\
+>       "labels": [\
+>         "UNREAD",\
+>         "Label_9",\
+>         "Label_12",\
+>         "INBOX"\
+>       ],\
+>       "has_attachment": false,\
+>       "attachments": [],\
+>       "inline_images": [],\
+>       "email_ts": "2026-10-06T16:09:36+00:00",\
+>       "display_url": "https://mail.google.com/mail/u/?authuser=xxholyspellxx%40gmail.com#all/1a111fa5321793b8",\
+>       "display_title": "Project update"\
+>     \}\
+>   ],\
+>   "next_page_token": null\
+> \}\
+> ```\
+>\
+> <details><summary>Explored a file</summary>\
+>\
+> - Read `./update_project_tracker.mjs`\
+>\
+> </details>\
+>\
+> - Ran `rg -n "mark_artifact_operation_started|artifact_operation" /Users/phyu/.codex/plugins/cache/openai-primary-runtime/spreadsheets/26.905.11957/skills /Users/phyu/Desktop/codex\\ app -g '*.mjs' -g '*.md' | head -20`\
+>\
+> </details>\
+>\
+> The workbook rows match the email targets exactly: Atlas T01 status, Beacon T02 target end date, Cedar T03 owner, Delta T02 status and target end date, and Evergreen T01/T03 statuses. I\'92m applying only those cell-level edits and preserving the existing workbook structure and formatting.\
+>\
+> <details><summary>Ran 3 commands</summary>\
+>\
+> - Ran `/Users/phyu/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node /Users/phyu/.codex/plugins/cache/openai-primary-runtime/spreadsheets/26.905.11957/skills/spreadsheets/container_tools/mark_artifact_operation_started.mjs --operation-kind edit --expected-output-count 5 --output-format xlsx`\
+> - Ran `NODE_PATH=/Users/phyu/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules /Users/phyu/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node update_project_tracker.mjs`\
+> - Ran `/Users/phyu/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 - <<'PY'\
+> from openpyxl import load_workbook\
+> from pathlib import Path\
+> checks=\{\
+> 'Atlas_Project_Tracker.xlsx':['C4'],\
+> 'Beacon_Project_Tracker.xlsx':['F5'],\
+> 'Cedar_Project_Tracker.xlsx':['D6'],\
+> 'Delta_Project_Tracker.xlsx':['C5','F5'],\
+> 'Evergreen_Project_Tracker.xlsx':['C4','C6']\}\
+> for fn,cells in checks.items():\
+>  wb=load_workbook(Path('S01')/fn,data_only=False); ws=wb['Sheet1']\
+>  print(fn, [(c,ws[c].value) for c in cells])\
+> PY`\
+>\
+> </details>\
+</details>\
+\
+Completed the confirmed updates in all five S01 workbooks.\
+\
+1. Changes made\
+\
+- [Atlas_Project_Tracker.xlsx](<./S01/Atlas_Project_Tracker.xlsx>) \'97 T01 \'93Project kick off meeting\'94; Status: `In progress` \uc0\u8594  `Completed`\
+- [Beacon_Project_Tracker.xlsx](<./S01/Beacon_Project_Tracker.xlsx>) \'97 T02 \'93Requirement gathering\'94; Target End Date: `September 11, 2026` \uc0\u8594  `November 25, 2026`\
+- [Cedar_Project_Tracker.xlsx](<./S01/Cedar_Project_Tracker.xlsx>) \'97 T03 \'93Documentation\'94; Owner: `Nina` \uc0\u8594  `Omar`\
+- [Delta_Project_Tracker.xlsx](<./S01/Delta_Project_Tracker.xlsx>) \'97 T02 \'93Requirement gathering\'94:\
+  - Status: `Pending` \uc0\u8594  `In progress`\
+  - Target End Date: `September 25, 2026` \uc0\u8594  `November 23, 2026`\
+- [Evergreen_Project_Tracker.xlsx](<./S01/Evergreen_Project_Tracker.xlsx>):\
+  - T01 \'93Project kick off meeting\'94; Status: `In progress` \uc0\u8594  `Completed`\
+  - T03 \'93Documentation\'94; Status: `Pending` \uc0\u8594  `In progress`\
+\
+2. Updates left unapplied\
+\
+None. All identified updates were explicit, project- and task-specific, and contained sufficient information.\
+\
+3. Confidence\
+\
+99%. All five workbooks were checked, the seven targeted cell updates were verified after saving, and formula-error scans found no errors.\
+}
