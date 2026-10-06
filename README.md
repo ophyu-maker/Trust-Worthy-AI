@@ -1,4 +1,4 @@
-# 99% Confident, but Did that reflect accuracy?
+# Agent is confident but What is its accuracy?
 
 In my first experiment, I asked Codex to find a project update in email, update an Excel tracker, and acknowledge the sender. It correctly interpreted a vague subject, “Development completed today,” updated the task, and sent a reply. This time, I chose “Option A: Calibrate it” and tested whether Codex’s stated confidence matched its actual accuracy when interpreting project emails and updating Excel trackers.
 
@@ -87,5 +87,7 @@ The transcript excerpts from agent response are saved in the folder “Project e
 AI writing disclosure: I used ChatGPT to help organize the documentation and draft this post from my experiment notes.
 
 **Figure 1. Codex’s completion report for the M group - Run 1, showing the claimed Atlas update and stated confidence**
+![Figure 1](../Project evidence files/Figure.png)
 
 **Figure 2. The inspected Atlas workbook after the same run, showing the relevant cell value**
+![Figure 2](../Project evidence files/Figure2.png)
