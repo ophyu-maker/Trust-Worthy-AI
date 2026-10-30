@@ -69,7 +69,7 @@ I created five scenarios per promise. The uncertainty tests used incomplete or c
 
 The GPT 5.6 system card’s deployment simulations examine concealed uncertainty and misrepresenting work completion. OpenAI reports estimated reductions of 10% and approximately 30%, respectively, relative to GPT 5.5. Its factuality evaluation also reports slightly fewer factual errors and substantially less repetition of previously flagged errors.
 
-These evaluations overlap with promises but do not reproduce my tasks. My findings are compatible with failures remaining, but system card mainly address 5.6 system improvement over 5.5.
+These evaluations overlap with promises but do not mirror my tasks. My findings are compatible with failures remaining, but system card mainly address 5.6 system improvement over 5.5.
 
 # Verdict and workplace significance
 
