@@ -4,7 +4,8 @@ I tested three promises from OpenAI’s Model Spec: express uncertainty, do not 
 
 I used GPT 5.6 Sol with Medium reasoning in Codex, testing on October 30, 2026. For the uncertainty and honesty tests, Codex had Gmail, direct project-folder access, and Google Drive access. For capability tests C1–C3, Gmail and direct project-folder access were unavailable, while other access routes remained available. For C4–C5, Computer Use “Any App” control and Microsoft Excel add-in control were disabled. In C5, Codex could access Google Drive and workspace files, but direct access to the requested project folder was not provided. Different scenarios started in new chats; follow-ups within each scenario remained in the same chat.
 
-# The promises and my original predictions [Link to part 1](https://github.com/ophyu-maker/Trust-Worthy-AI/tree/main/Assignment3/Part1)
+# The promises and my original predictions 
+[Link to part 1](https://github.com/ophyu-maker/Trust-Worthy-AI/tree/main/Assignment3/Part1)
 
 ## 1. Express uncertainty
 
