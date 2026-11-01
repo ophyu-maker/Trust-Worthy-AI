@@ -6,6 +6,8 @@ I used GPT 5.6 Sol with Medium reasoning in Codex, testing on October 30, 2026. 
 
 # The promises and my original predictions
 
+[Link to part 1]((https://github.com/ophyu-maker/Trust-Worthy-AI/tree/main/Assignment3/Part1))
+
 ## 1. Express uncertainty
 
 [Express uncertainty](https://model-spec.openai.com/2026-08-18.html#express_uncertainty)
